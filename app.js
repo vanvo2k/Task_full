@@ -1,13 +1,12 @@
 import express from "express";
 import cors from "cors";
-import { Wirite } from "./handle";
+import { Action } from "./handle";
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/", Wirite);
-// app.use("/write", Wirite);
+app.use("/action", Action);
 app.get("/", (req, res) => {
   const html = `
     <html>
@@ -50,7 +49,7 @@ app.get("/", (req, res) => {
       </head>
       <body>
         <div class="shell">
-            <a href="/write">
+            <a href="/action">
                 <button id="writeButton">Execute Write Function</button>
             </a>
             :
