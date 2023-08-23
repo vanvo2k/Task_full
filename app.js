@@ -6,8 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/action", Action);
-app.get("/", (req, res) => {
+app.get("/action", (req, res) => {
   const html = `
     <html>
       <head>
@@ -53,12 +52,12 @@ app.get("/", (req, res) => {
                 <button id="writeButton">Execute Write Function</button>
             </a>
             :
-            <a href="https://docs.google.com/spreadsheets/d/1OOsURNAIsGEEc0dQTtNVB9iBiAj9wZtexFL1XsHzbOY/edit#gid=0">Link GG-Sheet</a>
+            <a href="https://docs.google.com/spreadsheets/d/1SJOv70puHEQwrSoZIshIVhHq-NKS9fhvoyOwlK1Lhgs/edit#gid=0">Link GG-Sheet</a>
             <img class="img1" src="https://art.pixilart.com/028d26275ff2b38.gif"/>
         </div>
         <script>
           document.getElementById("writeButton").addEventListener("click", async () => {
-                alert("waiting a few seconds !")
+            window.location.href="./action";
           });
         </script>
         
@@ -67,5 +66,5 @@ app.get("/", (req, res) => {
   `;
   res.send(html);
 });
-
+app.use("/", Action);
 export const viteNodeApp = app;
