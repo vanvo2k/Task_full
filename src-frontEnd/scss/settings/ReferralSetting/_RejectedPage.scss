@@ -1,0 +1,14 @@
+.RejectedPage.card {
+    .card {
+        box-shadow: 5.7px 5.7px 18px 0 rgba(0, 0, 0, 0.06);
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+        color: #A0A0A0;
+        .status {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .red-text{
+        }
+    }
+}

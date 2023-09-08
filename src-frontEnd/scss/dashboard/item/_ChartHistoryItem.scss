@@ -1,0 +1,39 @@
+.ChartHistory {
+    min-height: 260px;
+
+    .ShowDays {
+        button {
+            border-radius: 5px;
+            background-color: #fff;
+            border-color: #eeeeee;
+            font-size: 15px;
+            margin: 10px 5px 25px 0;
+            color: #333;
+        }
+
+        .active {
+            background-color: #4cbff5 !important;
+            color: #fff !important;
+            border-color: #4cbff5 !important;
+
+        }
+
+        .btn-secondary:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.NoHistory {
+    h4 {
+        line-height: 100px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .ChartHistoryItem {
+        .ChartRankItem {
+            margin-bottom: -50px;
+        }
+    }
+}

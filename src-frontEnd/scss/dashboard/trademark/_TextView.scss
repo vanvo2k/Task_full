@@ -1,0 +1,13 @@
+.TextView {
+    margin: 0 .4rem;
+
+    .noTrade {
+        color: #37af56;
+    }
+
+    span {
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,2 @@
+export const CLOSE_ALERT = "CLOSE_ALERT";
+export const DISPLAY_ALERT = "DISPLAY_ALERT";

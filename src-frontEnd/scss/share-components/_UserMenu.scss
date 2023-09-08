@@ -1,0 +1,103 @@
+.UserMenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 274px;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    transition: all .3s;
+
+    .Avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 4px;
+        @include border-radius(50%);
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .Notify {
+        position: absolute;
+        top: 2px;
+        left: 32px;
+        display: inline-flex;
+        background-color: #ff443e;
+        border-radius: 50%;
+        color: #fff;
+        animation: sonar 1.5s infinite;
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        border: 2px solid #fff;
+        padding: 1px 3px;
+        line-height: 11px;
+    }
+
+    .dropdown {
+        cursor: pointer;
+        display: inline-block;
+
+        .Badge {
+            background-color: #ff443e;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 10px;
+            position: relative;
+            top: -5px;
+            left: 3px;
+        }
+    }
+
+    .dropdown-menu {
+        left: 100% !important;
+        transform: none !important;
+        top: unset !important;
+        bottom: 10px !important;
+        border-radius: 5px;
+        box-shadow: 4.2px 4.2px 18px 0 rgba(0, 0, 0, 0.06);
+        border: solid 1px #eeeeee;
+        color: #212529;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .dropdown-toggle::after {
+        border-top: 0.25em solid transparent;
+        border-left: 0.3em solid #333;
+        border-bottom: 0.25em solid transparent;
+        vertical-align: baseline;
+        margin-left: 8px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .UserMenu {
+        width: auto;
+    }
+}
+
+@keyframes sonar {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(.8);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

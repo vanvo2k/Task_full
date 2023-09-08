@@ -1,0 +1,17 @@
+.ReferralLinkEditor {
+    .edit-canceler {
+        font-family: LinearIcons, sans-serif;
+    }
+    .loader {
+        display: none;
+        margin-right: 8px;
+
+        animation: spin 2s linear infinite;
+        text-align: center;
+        line-height: 0;
+        font-family: LinearIcons;
+        &.visible{
+            display: inline-block;
+        }
+    }
+}

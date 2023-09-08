@@ -1,0 +1,5 @@
+import {NAME} from "./constants";
+
+export const FETCH_PLANS_REQUEST = NAME + "/FETCH_PLANS_REQUEST";
+export const FETCH_PLANS_SUCCESS = NAME + "/FETCH_PLANS_SUCCESS";
+export const FETCH_PLANS_FAILURE = NAME + "/FETCH_PLANS_FAILURE";

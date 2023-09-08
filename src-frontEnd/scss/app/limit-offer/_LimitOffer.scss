@@ -1,0 +1,199 @@
+@font-face {
+	font-family: 'DmSans';
+	src: url('/assets/fonts/DmSans/DMSans-Regular.ttf') format('truetype');
+	font-style: normal;
+}
+
+.ModalLimitedTimeOffer {
+    .modal-content {
+        font-family: 'DmSans', sans-serif;
+        background: url('/assets/images/limit-offer-bg.png') no-repeat center;
+        background-size: cover;
+
+        .Close {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            cursor: pointer;
+            border: 1px solid #000000;
+            background-color: #000000;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+
+            i {
+                color: #ffffff;
+            }
+        }
+
+        .BonusImage {
+            position: absolute;
+            top: -80px;
+            right: 10px;
+
+            img {
+                width: 200px
+            }
+        }
+
+        .modal-body {
+            padding: 40px;
+            color: #ffffff;
+
+            h1 {
+                text-transform: uppercase;
+                span {
+                    background-color: #e06975;
+                    padding: 6px;
+                    border-radius: 4px;
+                }
+            }
+
+            .OfferBenefit {
+                ul {
+                    list-style: none;
+                    padding-inline-start: 5px;
+                }
+                ul li {
+                    margin: 5px 0;
+                }
+                ul li:before {
+                    content: '✓';
+                    border: 1px solid #76d359;
+                    background: #76d359;
+                    border-radius: 50%;
+                    padding: 0px 6px;
+                    color: #4408d7;
+                    margin-right: 10px;
+                }
+            }
+
+            .OfferGallery {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin: 0 5px;
+                    border-radius: 4px;
+                    max-width: 100px;
+                }
+            }
+
+            .LimitedTimeOfferForm {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 120px;
+
+                .OfferForm {
+                    position: relative;
+                    z-index: 5;
+                    padding: 30px;
+
+                    .OfferFormBackground {
+                        content: "";
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        z-index: -1;
+                        background-color: #55068d;
+                        opacity: 0.5;
+                        border-radius: 2px;
+                    }
+
+                    .btn-submit {
+                        background-color: #55068d;
+                        border: 1px solid #8f4bc9;
+                        transition: 0.3s;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            .OfferCountdown {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                .OfferTitle {
+                    margin-right: 20px;
+                }
+
+                .countdown-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .countdown-item {
+                        margin: 10px 0;
+                        position: relative;
+
+                        .countdown {
+                            background: #ffffff;
+                            border-radius: 7px;
+                            width: 56px;
+                            height: 48px;
+                            text-align: center;
+                            margin: 0 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .countdown-number {
+                                span {
+                                    color: #6974ff;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    width: inherit;
+                                    height: inherit;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                        }
+
+                        .countdown-title {
+                            font-size: 11px;
+                            text-align: center;
+                            font-weight: 500;
+                            line-height: 18px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .ModalLimitedTimeOffer {
+        .modal-content {
+            .BonusImage {
+                display: none;
+            }
+            .Close {
+                right: -5px;
+            }
+            .modal-body {
+                .LimitedTimeOfferForm {
+                    display: block;
+                }
+            }
+        }
+    }
+}

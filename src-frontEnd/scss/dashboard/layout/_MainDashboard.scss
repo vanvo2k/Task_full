@@ -1,0 +1,57 @@
+.MainDashboard {
+    background-color: #fdfdfd;
+    transition: all 0.3s;
+    height: 100vh;
+    overflow-y: auto;
+    flex-grow: 1;
+    position: relative;
+
+    // button open limited time offer modal
+    .LimitedTimeOfferButton {
+        position: fixed;
+        bottom: 80px;
+        right: -10px;
+        a {
+            display: block;
+            cursor: pointer;
+            video {
+                pointer-events: none;
+            }
+            img{
+                pointer-events: none;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
+
+//TODO: should move to the right place
+@media only screen and (min-width: 1800px) {
+    .container {
+        width: 1560px;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // .row {
+    //     margin-left: -20px;
+    //     margin-right: -20px;
+    // }
+
+    [class*="col-"] {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .MainDashboard {
+        height: auto;
+        min-height: calc(100vh - 66px);
+        overflow-y: visible;
+        position: relative;
+        z-index: 0;
+    }
+}

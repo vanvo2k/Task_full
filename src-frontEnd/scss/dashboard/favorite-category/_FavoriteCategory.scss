@@ -1,0 +1,38 @@
+.FavoriteCategory {
+    margin-bottom: 40px;
+
+    .Wrapper {
+        background-color: #fff;
+        border: 1px solid #eee;
+        padding: 20px 20px 15px;
+        transition: all 200ms ease-out;
+        cursor: pointer;
+        display: block;
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.01);
+
+        &:hover {
+            box-shadow: 5.7px 5.7px 18px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .Header {
+            .Title {
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: #555;
+                @extend %text-ellipsis;
+            }
+
+            .Meta {
+                color: #b5b5b5;
+                font-size: 0.875rem;
+
+                .Total {
+                    color: #555;
+                }
+            }
+        }
+    }
+}

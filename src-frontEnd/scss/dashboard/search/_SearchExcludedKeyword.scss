@@ -1,0 +1,43 @@
+.SearchExcludedKeyword{
+    margin-left: 7px;
+
+    .Input{
+        display: none;
+    }
+
+    &.isOpen{
+        .Input{
+            display: block;
+        }
+
+        button.Toggle{
+            display: none;
+        }
+    }
+
+    button.Toggle{
+        color: #bbb;
+        background-color: #fff;
+        height: 35px;
+        width: 35px;
+        border: 1px solid #eee;
+        position: relative;
+        cursor: pointer;
+        @include border-radius(5px);
+
+        & > i{
+            font-size: 18px;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 47px;
+            background-color: #eee;
+            left: -8px;
+            bottom: 16px;
+            transform: rotateZ(-45deg);
+        }
+    }
+}

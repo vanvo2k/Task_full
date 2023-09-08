@@ -1,0 +1,153 @@
+.PricingPage {
+    padding-top: 30px;
+
+    .Title {
+        font-size: 1.625rem;
+        margin-bottom: 33px;
+    }
+
+    .PlanCard {
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding-top: 40px;
+        padding-bottom: 45px;
+        transition: box-shadow .3s;
+        margin-bottom: 30px;
+
+        &:hover {
+            box-shadow: 8.5px 8.5px 24px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .FeaturedImg {
+            width: 139px;
+            height: 113px;
+            background-size: contain;
+            margin: auto;
+        }
+
+        &.isFree {
+            .FeaturedImg {
+                background-image: url("/assets/images/pricing-icon-1.png");
+            }
+        }
+
+        &:not(.isFree) {
+            .FeaturedImg {
+                background-image: url("/assets/images/pricing-icon-2.png");
+            }
+        }
+
+        .PricingHeader {
+            position: relative;
+            padding-bottom: 7px;
+            margin-bottom: 25px;
+
+            &:after {
+                content: "";
+                width: 120px;
+                height: 1px;
+                position: absolute;
+                background-color: #eee;
+                bottom: 0;
+                margin-left: -60px;
+            }
+
+            .Name {
+                font-size: 1.125rem;
+                font-weight: 700;
+                margin-top: 30px;
+                margin-bottom: 12px;
+            }
+
+            .Price {
+                color: $tamz_primary_color;
+                font-weight: 700;
+                margin-bottom: 5px;
+                min-height: 60px;
+
+                .Number {
+                    font-size: 2.3125rem;
+
+                    .Origin {
+                        color: #adadad;
+                        text-decoration: line-through;
+                        font-size: 1.2rem;
+                        position: relative;
+                        left: 10px;
+                    }
+                }
+
+                .PerMonth {
+                    font-size: 0.875rem;
+                }
+            }
+
+            .Description {
+                font-size: 1rem;
+                color: #aaa;
+            }
+        }
+
+        .Features {
+            font-size: 1rem;
+            color: #808080;
+            text-align: left;
+            min-height: 120px;
+
+            ul {
+                list-style: none;
+                margin-bottom: 23px;
+                padding: 0 20px 0 40px;
+            }
+
+            li {
+                &:before {
+                    content: "\f120";
+                    font-family: Ionicons;
+                    color: $tamz_primary_color;
+                    font-size: 0.875rem;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .PricingButton {
+            a.btn {
+                padding: 7px 12px;
+                border: 1px solid $tamz_primary_color;
+                min-width: 122px;
+                transition: box-shadow .3s;
+
+                &:hover {
+                    box-shadow: 5.7px 5.7px 16px 0 rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            & > a:hover {
+                color: $tamz_primary_color;
+            }
+
+            .ButtonSubscription {
+                a:hover {
+                    background-color: $tamz_primary_color;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .PricingPage .container {
+        width: 1130px;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .PricingPage {
+        .GoHome {
+            margin-bottom: 30px;
+        }
+    }
+}

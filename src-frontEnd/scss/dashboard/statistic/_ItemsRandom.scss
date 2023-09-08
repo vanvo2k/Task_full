@@ -1,0 +1,31 @@
+.ItemsRandom {
+    &.loading {
+        .Title {
+            .Reload {
+                .Icon {
+                    animation: _spinner 1s linear infinite;
+                }
+            }
+        }
+    }
+
+    .Title {
+        position: relative;
+
+        .Reload {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            bottom: 0;
+
+            .Icon {
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.ListFeaturedProduct{
+    margin-bottom: 36px;
+}

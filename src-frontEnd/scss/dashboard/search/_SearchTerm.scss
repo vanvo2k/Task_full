@@ -1,0 +1,81 @@
+.SearchTerm {
+    position: relative;
+
+    button.RecentSearch {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    button.dropdown-item {
+        cursor: pointer;
+
+        &:last-child {
+            color: $tamz_primary_color;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    &:after {
+        /*content: "\f2f5";
+        position: absolute;
+        font-family: Ionicons;
+        right: 13px;
+        top: 2px;
+        color: $tamz_primary_color;
+        font-size: 1.25rem;*/
+    }
+
+    .Remove {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        font-size: 0.8rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #808080;
+
+        &:before {
+            content: "\f12a";
+            font-family: "Ionicons", serif;
+        }
+
+        &:hover {
+            color: #ff443e;
+        }
+    }
+
+    .IconSearch {
+        position: absolute;
+        color: $tamz_primary_color;
+        font-size: 1.25rem;
+        right: 10px;
+        top: 2px;
+        transition: all .3s;
+    }
+
+    input {
+        border-radius: 0 5px 5px 0;
+    }
+
+    &.hasWord {
+        input {
+            padding-right: 20px;
+        }
+
+        .Remove {
+            display: inline-block;
+        }
+
+        .IconSearch {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+

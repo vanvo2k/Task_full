@@ -1,0 +1,55 @@
+.SwitchLayout {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: #aaa;
+
+    .Option {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 31px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &.active {
+            background-color: $tamz_primary_color;
+            color: #fff;
+        }
+
+        &.List {
+            margin-left: 2px;
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 16px;
+                background-color: #fff;
+                left: 10px;
+                top: 6px;
+            }
+
+            &.active {
+                &:before {
+                    background-color: $tamz_primary_color;
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 1024px) {
+    body .SwitchLayout {
+        display: inline-block;
+        margin-right: 28px;
+    }
+}
+
+@media all and(max-width: 480px) {
+    body .SwitchLayout {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+.Home {
+    .jumbotron {
+        background: transparent;
+        padding: 20px 1rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .Home {
+        .jumbotron {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

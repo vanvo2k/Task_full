@@ -1,0 +1,48 @@
+.ModalAddToFavorites {
+    .modal-title {
+        position: relative;
+        display: block;
+        width: 100%;
+
+        .Close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+    }
+
+    .modal-body {
+        padding: 0 20px;
+    }
+
+    .ProductPreview {
+        height: 100%;
+        padding: 20px;
+        min-height: 300px;
+
+        .Wrapper {
+            max-width: 90%;
+            margin: 0 auto;
+
+            .Name {
+                margin-top: 20px;
+                text-align: center;
+                @extend %text-ellipsis;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .ModalAddToFavorites {
+        .modal-body {
+            padding: 0 15px;
+        }
+
+        .ProductPreview {
+            display: none;
+        }
+    }
+}

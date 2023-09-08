@@ -1,0 +1,189 @@
+.ProductDetails {
+    margin-top: 20px;
+
+    &.trending {
+        .Body {
+            .ProductImagePreview {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background: url("/assets/images/trending.svg") center center no-repeat;
+                    z-index: 1;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    .Body {
+        margin-bottom: 20px;
+    }
+
+    .Left {
+        .WrapperLeft {
+            position: relative;
+
+            .ButtonAddFavorites {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+
+    .Right {
+        color: #808080;
+        max-height: 500px;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: 300;
+
+        .Link {
+            margin-left: 5px;
+        }
+
+        > div {
+            margin-bottom: 5px;
+
+            > span:first-child {
+                font-weight: 500;
+                color: #333333;
+
+            }
+        }
+
+        > span {
+            font-weight: 500;
+        }
+
+        .rankDifference{
+            margin-left: 5px;
+
+            span{
+                color: #333333;
+            }
+
+            &.rank-plus{
+                span{
+                    color: green;
+                }
+            }
+            &.rank-minus{
+                span{
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .TitleItem h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #03a9f4;
+        padding-bottom: 30px;
+        padding-top: 10px;
+
+    }
+
+    .ASIN {
+        font-weight: 500;
+
+        .ASINImg {
+            max-width: 105px;
+            max-height: 17px;
+            height: auto;
+            margin-bottom: 1px;
+        }
+
+        .ButtonCopyToClipboard {
+            padding: 1px;
+            cursor: pointer;
+            color: #808080;
+            display: inline-block;
+        }
+    }
+
+    .Actions {
+        > div span:first-child {
+            color: #03A9F4 !important;
+            font-weight: 500;
+        }
+        .linear-link {
+            color: #03A9F4 !important;
+        }
+    }
+
+    .ButtonAddFavorites {
+        display: inline-block;
+        transition: all 200ms ease-out;
+
+        &.loading {
+            opacity: 0.5;
+        }
+    }
+
+    .Histories {
+        padding-bottom: 30px;
+    }
+
+    &.c- {
+        &popsockets {
+            .Body {
+                .Left {
+                    .WrapperLeft {
+                        .ProductImagePreview {
+                            background-size: 100%;
+                            padding-bottom: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .ItemDetail {
+        .Right {
+            max-height: 300px;
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .ItemDetail {
+        .Left {
+            .Preview {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .ItemDetail {
+        .Header {
+            .TitleItem {
+                h1 {
+                    font-size: 1.5rem;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .Body {
+            .Left {
+                margin-bottom: 20px;
+            }
+
+            .Right {
+                overflow-y: visible;
+                max-height: 100%;
+            }
+        }
+    }
+}

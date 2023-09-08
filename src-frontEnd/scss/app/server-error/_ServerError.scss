@@ -1,0 +1,50 @@
+.ServerError {
+    .Images {
+        .Number {
+            color: $tamz_primary_color;
+        }
+    }
+
+    .Images {
+        .Number {
+            font-size: 12rem;
+            line-height: 1;
+        }
+
+        .Icon {
+            width: 180px;
+            height: auto;
+            padding: 10px 20px;
+        }
+    }
+
+    .Message {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+
+        code {
+            max-height: 150px;
+            overflow-y: auto;
+            display: inline-block;
+        }
+    }
+
+    .Help {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .ServerError {
+        .Images {
+            .Number {
+                font-size: 8rem;
+            }
+
+            .Icon {
+                width: 140px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.FavoriteCategoryCreator {
+    margin-bottom: 40px;
+
+    .wrapper {
+        background-color: #fff;
+        border: 1px solid #eee;
+        padding: 20px 20px 15px;
+        transition: all 200ms ease-out;
+        cursor: pointer;
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.01);
+        min-height: 100%;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            box-shadow: 5.7px 5.7px 18px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .add-favorite {
+            text-align: center;
+            height: fit-content;
+            margin: auto;
+            .add-symbol {
+                margin: auto;
+                font-family: LinearIcons, sans-serif;
+                font-size: 55px;
+                color: #cccccc;
+            }
+            .add-text {
+                color: #555555;
+                font-size: 19px;
+                margin: 0;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.Dashboard {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+
+    &.collapsed {
+        .SidebarDashboard {
+            width: 100px;
+            padding: 0;
+
+            .nav {
+                .nav-link {
+                    padding: 10px 0;
+                    text-align: center;
+                }
+
+                .Logo {
+                    background-size: 80px 52px;
+                }
+
+                .Text, .Copyright {
+                    display: none;
+                }
+
+                i {
+                    display: block;
+                    position: static;
+                }
+
+                .CollapseMenu {
+                    .Close {
+                        display: none;
+                    }
+
+                    .Open {
+                        display: block;
+                    }
+                }
+            }
+
+            .UserMenu {
+                width: 94px;
+                text-align: center;
+                font-size: 0;
+                left: 0;
+
+                .avatar {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1440px) {
+    .Dashboard {
+        &.collapsed {
+            .SidebarDashboard {
+                .nav {
+                    .nav-item:not(.Logo) {
+                    }
+
+                    .Logo {
+                        background-size: 62px 40px;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .Dashboard {
+        display: block;
+    }
+}

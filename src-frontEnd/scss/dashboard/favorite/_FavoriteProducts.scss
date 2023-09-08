@@ -1,0 +1,73 @@
+.FavoriteProducts {
+    .TableItemsMeta {
+        margin: 20px 0;
+
+        .TotalItems {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #444;
+        }
+
+        .Details {
+            min-width: 50%;
+
+            .Show {
+                .PageTitle {
+                    padding-bottom: 0;
+                }
+
+                .Edit {
+                    font-size: 1rem;
+                    cursor: pointer;
+                    margin-right: 5px;
+                }
+
+                .Description {
+                    color: #666;
+                    line-height: 28px;
+                    min-height: 28px;
+                    font-size: 0.875rem;
+                }
+            }
+
+            .Editor {
+                .Title {
+                    margin-bottom: 10px;
+                }
+
+                .Description {
+                    height: auto;
+                    resize: none;
+                    margin-bottom: 10px;
+                    font-size: 0.875rem;
+                }
+
+                .Right {
+                    button {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        .Options {
+            padding-left: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .FavoriteProducts {
+        .TableItemsMeta {
+            margin: 0;
+
+            .Details {
+                flex: 1;
+
+                .Editor {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

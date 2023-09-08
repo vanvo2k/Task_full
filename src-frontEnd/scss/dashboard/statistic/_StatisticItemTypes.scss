@@ -1,0 +1,16 @@
+.StatisticItemTypes {
+    &.card{
+        box-shadow: none;
+        border: 1px solid #f4f4f4;
+        overflow: hidden;
+    }
+
+    .card-header{
+        font-weight: 500;
+        background-color: #f2fbff;
+        border-bottom: none;
+        padding: 0 20px;
+        height: 60px;
+        line-height: 60px;
+    }
+}

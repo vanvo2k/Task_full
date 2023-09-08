@@ -1,0 +1,72 @@
+.TableListItems {
+    &.list {
+        .TableItemsWrapper .ProductInfo {
+            & > a {
+                display: block;
+                margin-bottom: 7px;
+            }
+        }
+    }
+
+    .TableItemsWrapper {
+        width: 100%;
+        padding: 0;
+        border-collapse: collapse;
+        text-align: center;
+        list-style: none;
+        margin-bottom: 40px;
+
+        .TableHead {
+            background-color: #f2fbff;
+            color: #808080;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1rem;
+
+            .TableCell {
+                font-weight: 500;
+                padding: 0;
+            }
+        }
+
+        .TableBody {
+            padding-top: 15px;
+            border-style: solid;
+            border-color: #f4f4f4;
+            border-width: 0 1px 0 1px;
+            transition: background-color .3s;
+
+            &:last-child {
+                border-width: 0 1px 1px 1px;
+            }
+
+            &:nth-child(2n + 1) {
+                background-color: #fafafa;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .075);
+            }
+        }
+
+        .TableCell {
+            border: unset;
+            vertical-align: top;
+            padding: 15px 10px;
+
+            &:first-child {
+                font-size: 0.9375rem;
+            }
+        }
+
+        // Grid layout
+        &.grid {
+            margin-top: 30px;
+            width: auto;
+
+            .TableHead {
+                display: none !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.ButtonIgnore {
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-size: 0.875rem;
+    text-align: center;
+    background-color: #4cbff5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    display: inline-block;
+
+    .Text {
+        padding-left: 4px;
+    }
+}
+
+.Item {
+    &:hover {
+        .ButtonIgnore {
+            opacity: 1;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .ButtonIgnore {
+        opacity: 1;
+
+        .Text {
+            display: none;
+        }
+    }
+}

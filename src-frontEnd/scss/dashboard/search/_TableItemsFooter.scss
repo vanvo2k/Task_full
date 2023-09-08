@@ -1,0 +1,34 @@
+.TableItemsFooter {
+    padding-bottom: 30px;
+}
+
+@media all and (max-width: 480px) {
+    body .TableItemsFooter {
+
+        .Left {
+            width: 100%;
+            float: none !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ShowPerPage {
+            display: flex;
+            align-items: center;
+            float: none !important;
+
+            select {
+                width: auto;
+            }
+        }
+
+        .PaginationItems {
+            display: flex;
+            justify-content: center;
+
+            .pagination {
+                display: inline-flex;
+            }
+        }
+    }
+}

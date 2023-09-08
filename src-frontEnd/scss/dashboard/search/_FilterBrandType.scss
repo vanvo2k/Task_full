@@ -1,0 +1,26 @@
+.FilterBrandType {
+    .SelectWrapper {
+        height: 100%;
+
+        select.form-control.selectBrandType {
+            height: 100% !important;
+        }
+    }
+
+    &.isActive {
+        .SelectWrapper {
+            background-color: #4cbff5;
+            border-radius: 5px;
+
+            select {
+                background-color: transparent;
+                color: #fff;
+                border: none;
+
+                option {
+                    color: #808080;
+                }
+            }
+        }
+    }
+}

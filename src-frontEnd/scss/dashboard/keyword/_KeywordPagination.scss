@@ -1,0 +1,44 @@
+.KeywordPagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .pagination {
+        .page-item {
+            cursor: pointer;
+        }
+    }
+
+    .PaginationItems {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body .KeywordPagination {
+        .Left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        select {
+            width: auto;
+            display: inline-block;
+        }
+
+        .PaginationItems {
+            display: flex;
+            justify-content: center;
+
+            ul.pagination {
+                flex-wrap: wrap;
+                display: inline-flex;
+
+                & > li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

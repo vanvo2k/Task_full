@@ -1,0 +1,1 @@
+export const MAX_LENGTH_SEARCH_TERM = 512

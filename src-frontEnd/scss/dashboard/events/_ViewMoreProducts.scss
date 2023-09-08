@@ -1,0 +1,21 @@
+.ViewMoreProducts {
+    transition: all 200ms ease-out;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        display: inline-block;
+        background: #03A9F4;
+        color: #ffffff;
+        border-radius: 5px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            text-decoration: none;
+            background: darken(#03A9F4,15%);
+            color: #ffffff;
+        }
+    }
+}

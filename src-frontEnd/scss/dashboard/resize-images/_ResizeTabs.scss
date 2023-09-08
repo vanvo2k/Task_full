@@ -1,0 +1,21 @@
+.ResizeTabs {
+    margin-bottom: 20px;
+
+    .Navs {
+        display: inline-block;
+
+        .nav-item {
+            a {
+                cursor: pointer;
+
+                &.active {
+                    cursor: auto;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

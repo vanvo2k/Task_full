@@ -1,0 +1,32 @@
+.EventItemPlaceholder {
+    .Wrapper {
+        .Details {
+            .WrapperDetails {
+                min-height: 100%;
+
+                .PreloadBox {
+                    min-height: 100%;
+                }
+            }
+
+            .FeaturedImage {
+                min-height: 100%;
+                height: 370px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .EventItemPlaceholder {
+        .Wrapper {
+            .Details {
+                margin-bottom: 20px;
+
+                .FeaturedImage {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

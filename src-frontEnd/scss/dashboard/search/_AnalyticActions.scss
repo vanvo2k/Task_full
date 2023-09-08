@@ -1,0 +1,126 @@
+.AnalyticActions {
+    .Dropdown {
+        padding: 0;
+        min-width: 400px;
+        max-width: 80%;
+        max-height: 80vh;
+        overflow-y: auto;
+
+        .FormSearchQuery {
+            .SearchName {
+                width: 100%;
+                border: 1px solid #eee;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                border-radius: 0;
+                padding: 20px 10px;
+
+                &:focus {
+                    border-color: #eee;
+                }
+            }
+        }
+
+        .ListQueries {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+
+            .Query {
+                padding: 10px;
+                cursor: pointer;
+
+                .Content {
+                    display: inline-flex;
+                    align-items: center;
+
+                    .Icon {
+                        margin-right: 5px;
+                        transition: 200ms all ease-out;
+                        color: #aaa;
+
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: #eee;
+
+                    .Remove {
+                        visibility: visible;
+                    }
+                }
+
+                .Remove {
+                    cursor: pointer;
+                    visibility: hidden;
+
+                    &:hover {
+                        color: #ff443e;
+                    }
+
+                    &:after {
+                        content: "\F12A";
+                        font-family: "Ionicons", serif;
+                    }
+                }
+            }
+        }
+
+        .PaginationQueries {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+
+            .pagination {
+                margin: 0;
+
+                .page-item {
+                    &:not(:last-child) {
+                        margin-right: 5px;
+                    }
+
+                    .page-link {
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.ErrorQueryName {
+    color: red;
+  }
+
+@media (max-width: 1400px) and (min-width: 480px) {
+    .AnalyticActions{
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .AnalyticActions {
+        width: 100%;
+
+        .Dropdown {
+            min-width: 300px;
+
+            .ListQueries {
+                .Query {
+                    .Remove {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        > div {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.NotificationBar {
+    background-color: #3892c2;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    z-index: 99999999;
+    animation: 200ms all ease-in-out;
+    padding: 7px 10px;
+
+    .Close {
+        display: none;
+    }
+
+    &.hidden {
+        height: 0;
+        display: none !important;
+    }
+
+    .Text {
+        margin-right: 20px;
+    }
+
+    .Action {
+        font-size: 14px;
+        line-height: 15px;
+        color: #333;
+        font-weight: 600;
+        background-color: #fff;
+        border-radius: 6px;
+        border: none;
+        padding: 10px 30px;
+        margin-right: 10px;
+    }
+
+    .Ignore {
+        color: #ccc;
+        font-size: 14px;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    body .NotificationBar {
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        background-color: #fff;
+        color: #333;
+        border-top: 1px solid #eee;
+        padding: 12px;
+        transition: all 300ms ease-out;
+
+        &.hidden {
+            display: block !important;;
+            height: unset;
+            transform: translateY(100%);
+        }
+
+        .Inner {
+            display: block !important;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                content: "\e8ae";
+                font-family: LinearIcons, serif;
+                z-index: 1;
+                color: $tamz_primary_color;
+                font-size: 1.2rem;
+            }
+        }
+
+        .Close {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: -10px;
+            z-index: 9;
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .Actions {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .Ignore {
+                display: none;
+            }
+
+            .Action {
+                margin-right: 0;
+                background-color: $tamz_primary_color;
+                color: #fff;
+                border-radius: 3px;
+                font-size: 0.9rem;
+                line-height: 1.5;
+                padding: 6px 10px 4px;
+                font-weight: 400;
+
+                &:focus {
+                    box-shadow: none!important;
+                }
+            }
+        }
+
+        .Text {
+            font-size: 0.875rem;
+            margin-right: 0;
+            margin-bottom: 10px;
+            padding: 0 30px;
+            text-align: left;
+        }
+    }
+}

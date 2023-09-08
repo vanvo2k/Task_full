@@ -1,0 +1,23 @@
+.TrademarkPreviewResults {
+    .TMResultsHeader {
+        tr {
+            th {
+                border: none;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .TrademarkPreviewResults {
+        .TMResults {
+            tr {
+                td, th {
+                    &:nth-child(4), &:nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+.TrademarkPage {
+    .ListTradeMarks {
+        display: inline-block;
+        font-size: 16px;
+
+        .Header {
+            text-align: center;
+            font-weight: 500;
+            color: #808080;
+            background-color: #f2fbff;
+            border-radius: 5px;
+
+            th {
+                font-weight: 400;
+            }
+        }
+        tbody {
+            td {
+                padding: 12px 0 5px 0;
+                border: none;
+                border-top: 1px solid #eeeeee;
+
+            }
+            tr:hover {
+                border: solid 1px red;
+                td {
+                    border-top: none;
+                    border-bottom: none;
+                }
+            }
+
+        }
+    }
+
+    .TrademarkList {
+        .Table {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 0;
+            border-collapse: collapse;
+
+            .TableRow {
+                &:hover {
+                    background-color: #eee;
+                }
+
+                &:first-child {
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #f2fbff;
+
+                    .TableCell {
+                        &:first-child {
+                            width: 60px;
+                            background-color: #d9f3ff;
+                        }
+
+                        &.Keywords {
+                            width: 50%;
+                        }
+                    }
+                }
+
+                .TableCell {
+                    border-style: dotted;
+                    border-color: #eee;
+                    border-width: 0 1px 0 1px;
+                    vertical-align: middle;
+                }
+
+                &:not(:first-child) {
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: 1280px) {
+        .ListTradeMarks {
+            .Header {
+                .Warnings {
+                    min-width: 110px;
+                }
+
+                .Order {
+                    min-width: 50px;
+                }
+
+                .Keyword {
+                    min-width: 309px;
+                }
+
+                .Status {
+                    min-width: 130px;
+                }
+
+                .Updated {
+                    min-width: 130px;
+                }
+
+                .Actions {
+                    min-width: 240px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    body .TrademarkPage {
+        .TMHeader {
+            flex-wrap: wrap;
+        }
+
+        .FormCreateTrademark {
+            margin-bottom: 20px;
+        }
+
+        .TrademarkList .Table {
+            border: none;
+
+            .TableRow {
+                display: block !important;
+                border-top: 4px solid $tamz_primary_color;
+                margin-bottom: 20px;
+                height: auto !important;
+                line-height: unset !important;
+
+                &.TableHeading {
+                    display: none !important;
+                }
+
+                &:not(.TableHeading) {
+                    .TableCell:before {
+                        content: attr(data-label);
+                        color: #808080;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: 500;
+                        margin-right: 10px;
+                        line-height: 1;
+                        position: absolute;
+                        left: 11px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .TableCell {
+                    display: block !important;
+                    text-align: right;
+                    border-bottom: 1px solid #ddd;
+                    padding: 10px;
+                    font-size: 1rem;
+                    border-color: #ddd;
+                    position: relative;
+
+                    &.Text {
+                        font-size: 14px;
+                    }
+
+                    &.Order {
+                        background-color: #d9f3ff;
+                    }
+                }
+            }
+
+            .TextView {
+                display: block;
+                padding-left: 75px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.CurrentPlan {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 5px;
+    box-shadow: rgba(67, 90, 111, 0.416) 0 0 1px, rgba(67, 90, 111, 0.3) 0 2px 4px -2px;
+    margin-bottom: 30px;
+
+    .Title {
+        margin-bottom: 1rem;
+    }
+
+    .Table {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .Header {
+            color: #585f65;
+            font-size: 0.9rem;
+        }
+
+        .Main {
+            .Plan {
+
+            }
+
+            .Price {
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.ShowPerPage {
+    font-size: 0.9375rem;
+    color: #808080;
+
+    & > span {
+        min-width: 50px;
+    }
+
+    select.form-control {
+        color: #333;
+        margin: 0 9px;
+    }
+}

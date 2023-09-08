@@ -1,0 +1,45 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.PaypalEmail {
+    margin-bottom: 40px;
+    .title {
+        color: #535353;
+    }
+    .updateMessage {
+        font-size: medium;
+        margin-top: 10px;
+
+        &.green-text{
+            color: #5cb85c;
+        }
+        &.red-text{
+            color: #d9534f;
+        }
+    }
+    .row {
+        .payment-title {
+            color: #535353;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .loader {
+            display: none;
+            margin-right: 8px;
+            animation: spin 2s linear infinite;
+            text-align: center;
+            line-height: 0;
+            font-family: LinearIcons;
+            &.visible{
+                display: inline-block;
+            }
+        }
+    }
+}

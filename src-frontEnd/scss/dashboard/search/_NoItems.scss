@@ -1,0 +1,18 @@
+.NoItems {
+    text-align: center;
+    font-size: 12px;
+
+    h4 {
+        margin: 20px auto;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .NoItems {
+        margin-left: 15px;
+
+        h4 {
+            font-size: 1rem;
+        }
+    }
+}

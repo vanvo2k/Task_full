@@ -1,0 +1,38 @@
+.SearchResult{
+    color: #808080;
+    padding-left: 20px;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color: #eee;
+        content: '';
+        left: -15px;
+        top: 10px;
+        transform: rotateZ(90deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    body .SearchResult{
+        display: inline-block;
+        vertical-align: bottom;
+        line-height: 30px;
+
+        &:before{
+            top: 14px;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .SearchResult {
+        padding-left: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}

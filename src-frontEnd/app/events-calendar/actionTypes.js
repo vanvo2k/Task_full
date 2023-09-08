@@ -1,0 +1,4 @@
+export const OPEN_EVENT_DETAIL = "OPEN_EVENT_DETAIL";
+export const CLOSE_EVENT_DETAIL = "CLOSE_EVENT_DETAIL";
+
+

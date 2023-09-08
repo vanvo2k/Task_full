@@ -1,0 +1,463 @@
+{
+    "general": {
+        "rank": "Rank",
+        "ASIN": "ASIN",
+        "price": "Price",
+        "brand": "Brand",
+        "title": "Title",
+        "description": "Description",
+        "all": "All",
+        "last_week": "Last Week",
+        "last_month": "Last Month",
+        "last_year": "Last Year",
+        "two_month_ago": "2 Month ago",
+        "date": "Date",
+        "count": "Count",
+        "upgrade_now": "Upgrade Now",
+        "contact_now": "Contact Now",
+        "show": "Show",
+        "items": "items",
+        "products": "products",
+        "total": "Total",
+        "close": "Close",
+        "thumbnail": "Thumbnail",
+        "information": "Information",
+        "rank_history": "Rank history",
+        "save": "Save",
+        "saved": "Saved",
+        "update": "Update",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "trending_products_title": "Trending Products",
+        "favorite_products_title": "Favorite Products",
+        "excluded_keywords": "Excluded keywords",
+        "searching": "Searching...",
+        "no_product": "No product.",
+        "refresh": "Refresh",
+        "wrong": "Something went wrong. Please try again!",
+        "announcement": "In order to show you the most relevant results, we are only displaying 36 most relevant pages for this search query. If you want, please slice up your search query by adding Rank range, Price range or Date range to access the rest of the results.",
+        "read_more": "Read more.",
+        "one_year_ago_today": "1 Year Ago Today"
+    },
+    "homePage": {
+        "welcome": "Welcome to SpyAMZ!",
+        "more": "More than",
+        "more_end": "products on Merch By Amazon and increasing hourly.",
+        "explore": "Explore now!"
+    },
+    "header": {
+        "pricing": "Pricing",
+        "affiliate": "Affiliate",
+        "sign_in": "Sign In",
+        "demo": "Demo",
+        "admin": "Admin",
+        "set_membership": "Set membership",
+        "billing": "Billing",
+        "settings": "Settings",
+        "sign_out": "Sign Out"
+    },
+    "item": {
+        "last_week": "Last Week",
+        "last_month": "Last Month",
+        "all": "All",
+        "link_amazon": "Link Amazon",
+        "rank": "Rank",
+        "ASIN": "ASIN",
+        "price": "Price",
+        "brand": "Brand",
+        "first_available": "First available",
+        "type": "Type",
+        "updated_at": "Updated at",
+        "description": "Description",
+        "features": "Features",
+        "created":  "Created at"
+    },
+    "tooltip": {
+        "current_rank": "Current rank",
+        "rank_difference": "Rank difference (relative)"
+    },
+    "keyword": {
+        "keywords_analytics": "Keyword Insights",
+        "keywords_no_result": "No result.",
+        "keywords_show": "Show",
+        "keywords": "keywords",
+        "placeholder": "Search keyword",
+        "count": {
+            "1": "One word",
+            "2": "Two words",
+            "3": "Three words",
+            "4": "Four words"
+        },
+        "tooltip": {
+            "keywords_analytics": "Find the highest performing keywords for your listings"
+        }
+    },
+    "trademark": {
+        "tooltip": {
+            "trademark_title": "Help to check the trademark according to your keywords"
+        },
+        "title": "Detect trademark"
+    },
+    "signIn": {
+        "title": "Sign in",
+        "description": "Sign in with your account on:"
+    },
+    "serverError": {
+        "help": "Try to refresh this page or feel free to contact us if the problem persists.",
+        "ignore": "Ignore",
+        "refresh": "Refresh"
+    },
+    "searchItem": {
+        "header": {
+            "price_is_between": "Price is between",
+            "from": "From",
+            "to": "To",
+            "save": "Save",
+            "rank_is_between": "Rank is between",
+            "view_all": "View all",
+            "alive": "Alive",
+            "dead": "Dead",
+            "all": "All",
+            "time_available_is_between": "Time available is between",
+            "update_query": "Update query",
+            "save_new_query": "Save new query",
+            "remove": "Remove",
+            "save_query": "Save query",
+            "analytic_preview": "Analytic preview",
+            "price": "Price",
+            "min_price": "Min Price",
+            "max_price": "Max Price",
+            "days_ago": "days ago",
+            "historical_day": "Historical day",
+            "export": "Export"
+        },
+        "search": {
+            "type": {
+                "all_words": "Has all words",
+                "at_least_one": "At least one",
+                "same_order": "Occur in same order",
+                "match_phrase": "Match phrase"
+            },
+            "search_placeholder": "ASIN or keyword..."
+        },
+        "filter": {
+            "status": {
+                "alive": "Alive",
+                "dead": "Dead",
+                "all": "All"
+            },
+            "type": {
+                "all": "All Clothing",
+                "standard": "Standard T-Shirt",
+                "premium": "Premium T-Shirt",
+                "longsleeve": "Long Sleeve T-Shirt",
+                "hoodie": "Pullover Hoodie",
+                "sweatshirt": "Sweatshirt",
+                "tanktop":  "Tank Top",
+                "vneck": "Women's V-neck T-shirt",
+                "raglan": "Raglan Baseball Tee"
+            },
+            "market": {
+                "us": "US",
+                "uk": "UK",
+                "de": "DE"
+            }
+        },
+        "sort": {
+            "field": {
+                "trends": "Trends",
+                "rank": "Best Seller Rank",
+                "trending": "Trending",
+                "available": "Published Date",
+                "crawled": "Date found",
+                "relevance": "Relevance"
+            },
+            "title": "Sort by"
+        },
+        "query": {
+            "save": "Save query",
+            "create_placeholder": "Name query",
+            "search_placeholder": "Search name query",
+            "invalid_query_name":"Invalid name",
+            "query_name_exists":"This name already exists",
+            "no_error":""
+        },
+        "tooltip": {
+            "rank": "Listings of the highest ranked stores",
+            "trending": "Listing with new rank up in 7 days"
+        }
+    },
+    "pricing": {
+        "your_plan": "Your plan",
+        "free": "Free",
+        "month": "month",
+        "pricing": "Pricing",
+        "subscribe": "Subscribe",
+        "go_home": "Go home"
+    },
+    "mainMenu": {
+        "dashboard": "Stats",
+        "product": "Products",
+        "ggs-product": "GGS Products",
+        "keyword": "Keywords",
+        "events": "Events",
+        "events-calendar": "Events Calendar",
+        "trademark": "TradeMark",
+        "trends": "Trends",
+        "favorites": "Favorites",
+        "analytics": "Analytics",
+        "resizer": "Resizer",
+        "collapse_menu": "Collapse Menu",
+        "history":  "History",
+        "search": "Search history"
+    },
+    "otherTools": {
+        "spyetsy": {
+            "title": "SpyEtsy",
+            "subtitle": "The First and only Etsy Research tool",
+            "description": "Etsy has always been well-known with T-shirt sellers for a long time ago. It was considered to be a goldmine full of top-notch ideas. Countless successful camps and ideas on Facebook Ads platform were known to be started from Etsy. Thus, SpyEtsy will be your best sidekick, offering the best ideas for your e-commerce business."
+        },
+        "spybadass": {
+            "title": "SpyBadass",
+            "subtitle": "The World #1 Facebook Ads Research tool",
+            "description": "5,000 - 7,000 new T-shirt ideas updated every day. This is your must-have tool for your T-shirt selling Business."
+        },
+        "ToolLabel": {
+            "link_tool": "Link Tool: ",
+            "fb_group": "Join FB Group: ",
+            "fb_page": "Join FB Page: "
+        }
+    },
+    "tm": {
+        "keywords": "Keywords",
+        "warnings": "Warnings",
+        "status": "Status",
+        "updated": "Updated",
+        "actions": "Actions",
+        "placeholder_beAdded": "Add keyword to check trademark",
+        "placeholder": "You can not add more keywords.",
+        "sort_by": "Sort by",
+        "sort_by_date": "Date",
+        "sort_by_warnings": "Warnings",
+        "count_keywords": "keywords",
+        "count_left": "left",
+        "listStatus": {
+            "pending": "Pending",
+            "completed": "Completed",
+            "processing": "Processing"
+        }
+    },
+    "settings": {
+        "billing": {
+            "title": "Billing",
+            "your_plan": "Your plan",
+            "not_subscribe": "You have not subscribed any plan.",
+            "payoneer": "Want to pay with Payoneer?",
+            "click_here": "Click here",
+            "change_plan": "Change plan",
+            "cancel": "Cancel",
+            "confirm_cancel": "Are you want to cancel current plan?",
+            "subscribing": "You are subscribing the plan",
+            "registration": "Registration date",
+            "expiration": "Expiration date",
+            "history": {
+                "title": "Billing History",
+                "date": "Date",
+                "description": "Description",
+                "status": "Status",
+                "amount": "Amount",
+                "free": "Free",
+                "no_transaction": "You have not made a transaction yet"
+            }
+        },
+        "profile": {
+            "title": "Profile",
+            "name": "Name",
+            "email": "Email",
+            "settings": {
+                "title": "Settings",
+                "label_language": "Language",
+                "language_vi": "Vietnamese",
+                "language_en": "English",
+                "label_phone": "Phone"
+            }
+        },
+        "referral": {
+            "title": "Referral",
+            "share": "Share your link",
+            "accepted": {
+                "paypal_email": {
+                    "title": "Payment Method",
+                    "PAYPAL": "PAYPAL",
+                    "save": "Save"
+                },
+                "referral_link": {
+                    "title": "Share your link",
+                    "description": "Copy your personal referral link and share it to your friends and followers.",
+                    "referral_link": "REFERRAL LINK",
+                    "copy": "Copy",
+                    "edit": "Edit",
+                    "assets": {
+                        "you_can": "You can use our",
+                        "banner_within_assets": "Official Banners within Assets",
+                        "without_any_editing": "to directly paste them on your site without any editing."
+                    }
+                },
+                "referral_statistic": {
+                    "title": "Statistics",
+                    "click": {
+                        "title": "Clicks",
+                        "description": "Number of times your link has been clicked."
+                    },
+                    "referral": {
+                        "title": "Referrals",
+                        "description": "People who have signed up and been converted to paid users."
+                    },
+                    "pending": {
+                        "title": "Pending",
+                        "description": "Amount waiting to be approved."
+                    },
+                    "earned": {
+                        "title": "Earned",
+                        "description": "Approved amount and ready to be paid out."
+                    },
+                    "paid": {
+                        "title": "Paid",
+                        "description": "Paid amount to your PayPal."
+                    }
+                },
+                "policy": {
+                    "how_it_work": "Want to know how program work? Check out our ",
+                    "term_and_policy": "Terms and Policies."
+                }
+            },
+            "not_register": {
+                "description": "Start your referral program today.",
+                "join_now": "Join Now !",
+                "term_and_policy_title": "Terms and policies of the program",
+                "see_more": "See more ..."
+            },
+            "pending": {
+                "status": "Status: ",
+                "pending": "Pending",
+                "description": "Your request had been sent. It will take a little time to check your request.",
+                "waiting_for_result": "While waiting for the result, you can read the ",
+                "term_and_policy": "Terms and Policies",
+                "of_the_program": " of the program."
+            },
+            "rejected": {
+                "status": "Status: ",
+                "rejected": "Rejected",
+                "description": "Sorry, your request to the referral program has been rejected.",
+                "you_can_read": "You can read the ",
+                "term_and_policy": "Terms and Policies",
+                "to_find_out": " to find out why your request has been rejected."
+            },
+            "blocked": {
+                "status": "Status: ",
+                "blocked": "Blocked",
+                "description": "Sorry, your referral has been stopped.",
+                "you_can_read": "You can read the ",
+                "term_and_policy": "Terms and Policies",
+                "or_contact": " to find out why your program has been blocked."
+            },
+            "error": {
+                "message": "Some thing went wrong. Please try again."
+            }
+        }
+    },
+    "resizer": {
+        "title": "PNG Resizer for MBA",
+        "guide": "Resize your Artwork Files to Merch by Amazon format in PNG 4500x5400 for T-Shirt & 4500x4050 for Hoodie.\nJust drag’n’drop your images to the green button above that says CHOOSE IMAGES.\nThere is no uploading. 150 Images Resized in Under 60 Seconds.",
+        "ps": ""
+    },
+    "user_menu": {
+        "support": "Support",
+        "billing": "Billing",
+        "settings": "Settings",
+        "affiliates": "Affiliates",
+        "new": "new",
+        "sign_out": "Sign Out"
+    },
+    "statistic": {
+        "random_products": "Random products",
+        "top_10_rising": "Top 10 fastest rising products",
+        "top_10_bsr": "Top 10 best seller ranking products",
+        "alive": "ALIVE",
+        "has_rank": "HAS RANK",
+        "total": "Total",
+        "updated": "UPDATED TODAY",
+        "new": "NEW TODAY",
+        "added": "ADDED TODAY",
+        "deleted": "DELETED TODAY",
+        "see_more": "See more"
+    },
+    "upgrade": {
+        "trial": {
+            "title": "Sign up now for 3-day FREE trial to spy all Merch items",
+            "description": "Get unlimited access to sale and rank data, advanced filter and tracking with all Premium features.",
+            "upgrade": "Get 3-day trial now"
+        },
+        "pro": {
+            "title": "Upgrade today with just $99 for unlimited access",
+            "description": "Get unlimited access to all Advanced feature exclusively for PRO package.",
+            "upgrade": "Get PRO"
+        },
+        "trial_trademark":{
+            "title": "Upgrade plan for unlimited access",
+            "description": "Get unlimited access to all Advanced feature exclusively for PRO package.",
+            "upgrade": "See Plans"
+        }
+    },
+    "event": {
+        "title": "Events",
+        "details": "Details",
+        "more_products": "More products"
+    },
+    "favorite": {
+        "title_category": "Favorite categories",
+        "no_category": "You have no favorite category",
+        "confirm_delete": "Are you sure want to delete this board?",
+        "modal": {
+            "title": "Add to favorites",
+            "placeholder_input": "Search or create a new category",
+            "create": "Create"
+        }
+    },
+    "limit_offer": {
+        "header": {
+            "title": "Want a $1000 gift?",
+            "description": "Enter your contact and get the monthly premium resources & exclusive freebies. And more..."
+        },
+        "list_gift": {
+            "gift_1": "Design & Mockup Files",
+            "gift_2": "Selling Guides & Tips",
+            "gift_3": "Discount Vouchers"
+        },
+        "form": {
+            "email": "Email",
+            "phone": "Tel/Facebook",
+            "button": "I want it"
+        },
+        "countdown": {
+            "title": "This special offer will expire in...",
+            "day": "day",
+            "hour": "hour",
+            "minute": "minute",
+            "second": "second"
+        }
+    },
+    "optin": {
+        "title": "Join us",
+        "subtitle": "the coolest newsletter\nabout merch by amazon",
+        "description": "ahead of the curve by receiving the hottest",
+        "description_strong": "t-shirt trends and ideas",
+        "description_end": "before everyone else.",
+        "subscribe": "Click to get",
+        "thanks": "Thank you"
+    },
+    "similarProducts": {
+        "title": "Similar products",
+        "no_product": "Sorry! We found no similar products."
+    }
+}

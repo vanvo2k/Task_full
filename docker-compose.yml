@@ -1,0 +1,100 @@
+services:
+  # web:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - .:/code
+  #   depends_on:
+  #     - my-mongodb
+  #   command: npm start
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+    container_name: elasticsearch
+    deploy:
+      resources:
+        limits:
+          cpus: '5.0'
+          memory: 400M
+        reservations:
+          cpus: '1.0'
+          memory: 100M
+    restart: always
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.17.9
+    restart: always
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+  # fluentd:
+  #   build: .
+  #   restart: always
+  #   volumes:
+  #     - ./fluentd/fluentd.conf:/fluentd/etc/fluent.conf
+  #   command: ["fluentd", "-c", "/fluentd/etc/fluent.conf"]
+  #   ports:
+  #     - "24224:24224"
+  #   depends_on:
+  #     - elasticsearch
+  my-mongodb:
+    image: mongo:5
+    container_name: my-mongodb
+    ports:
+      - 27019:27019
+    volumes:
+      - mongodb:/data/db
+      - mongoconfig:/data/configdb
+  redis:
+    image: "redis:4.0.11"
+    deploy:
+      resources:
+        limits:
+          cpus: "5.0"
+          memory: 50M
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+  nats:
+    image: "nats:0.8.0"
+    deploy:
+      resources:
+        limits:
+          cpus: "5.0"
+          memory: 50M
+    entrypoint: "/gnatsd -DV"
+    expose:
+      - "4222"
+    ports:
+      - "4222:4222"
+    hostname: nats-server
+
+volumes:
+  mongodb:
+  mongoconfig:
+  redis_data:
+  elasticsearch-data:

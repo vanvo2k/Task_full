@@ -1,0 +1,89 @@
+.CheckboxAnimated {
+    input {
+        position: absolute;
+        display: none;
+
+        &:checked {
+            + label {
+                &:after {
+                    box-sizing: border-box;
+                    width: 6px;
+                    height: 12px;
+                    border: 0 solid #fff;
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    top: 10px;
+                    left: 4px;
+                    transform: rotate(45deg);
+                    transform-origin: 0 100%;
+                    border-right-width: 2px;
+                    border-bottom-width: 2px;
+                    animation: CheckboxCheck 400ms cubic-bezier(.4, .0, .23, 1) forwards;
+                }
+
+                &:before {
+                    border: #3e97eb;
+                    background: #3e97eb;
+                    animation: ShrinkBounce 250ms cubic-bezier(.4, .0, .23, 1);
+                }
+            }
+        }
+
+    }
+
+    label {
+        position: relative;
+        display: block;
+        padding-left: 30px;
+        cursor: pointer;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            content: '';
+            border: 1px solid #c0c0c0;
+            transition: all 250ms cubic-bezier(.4, .0, .23, 1);
+            border-radius: 1px;
+        }
+
+    }
+}
+
+@keyframes CheckboxCheck {
+    0% {
+        width: 0;
+        height: 0;
+        transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+    33% {
+        width: 6px;
+        height: 0;
+        transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+    100% {
+        width: 6px;
+        height: 12px;
+        transform: translate3d(0, -12px, 0) rotate(45deg);
+    }
+}
+
+@keyframes ShrinkBounce {
+    0% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

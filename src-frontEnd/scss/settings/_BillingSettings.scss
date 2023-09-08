@@ -1,0 +1,150 @@
+.BillingSettings {
+    .title {
+        font-size: 1.625rem;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .Title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 19px;
+    }
+
+    .Message, .CurrentPlan {
+        font-size: 1rem;
+        color: #808080;
+        margin-bottom: 22px;
+
+        strong {
+            color: #333;
+            font-weight: 500;
+        }
+    }
+
+    .CurrentPlan > div:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    .BillingPlan {
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 46px 40px;
+
+        .Guide {
+            font-size: 1rem;
+            color: #808080;
+        }
+
+        .ChangePlanWrapper {
+            margin-bottom: 20px;
+
+            .ChangePlan {
+                font-size: 0.9375rem;
+                padding: 8px 20px;
+                background-color: #02a8f5;
+
+                &:hover {
+                    background-color: #02a8f5;
+                    border-color: #02a8f5;
+                    box-shadow: 5.7px 5.7px 16px 0 rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+
+    .BillingHistory {
+        margin-top: 46px;
+
+        .Title, .Message {
+            padding-left: 40px;
+        }
+
+        .Histories {
+            font-size: 1rem;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            overflow: hidden;
+
+            .Name {
+                .Text {
+                    margin-right: 10px;
+                }
+
+                .Coupon {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    background-color: #666;
+                    color: #fff;
+                    padding: 3px 10px;
+                    border-radius: 5px;
+                }
+            }
+
+            table {
+                text-align: center;
+                color: #808080;
+                margin-bottom: 0;
+
+                th, td {
+                    border: unset;
+                    vertical-align: middle;
+                }
+
+                th {
+                    font-weight: 500;
+                    color: #333;
+                    padding: 7px 12px 8px;
+                }
+
+                td {
+                    padding: 13px;
+                }
+
+                thead {
+                    background-color: #f2fbff;
+                }
+
+                tbody {
+                    & > tr:nth-child(even) {
+                        background-color: #fafafa;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .BillingSettings {
+        .title {
+            margin-bottom: 30px;
+        }
+
+        .BillingHistory {
+            .Histories {
+                table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-child(1), &:nth-child(3) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                &:first-child, &.Status {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

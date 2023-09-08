@@ -1,0 +1,19 @@
+.PaginationSimilarProducts {
+    text-align: center;
+    margin-top: -15px;
+
+    .pagination {
+        display: inline-flex;
+
+        .page-item {
+            &.Previous {
+                display: inline-block;
+            }
+
+            &.Next {
+                display: inline-block;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,181 @@
+.FilterHistoricalDay {
+  cursor: pointer;
+  border: 1px solid #eee;
+  margin-left: auto;
+  background-color: #6c757d;
+  color: #fff;
+
+  @include border-radius(5px);
+
+  i {
+    margin-right: 10px;
+  }
+
+  .Content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &.isActive {
+    background-color: #4cbff5;
+    border-color: #4cbff5;
+
+    .Content, i {
+      color: #fff;
+    }
+  }
+}
+
+.FormFilterHistoricalDay {
+  display: flex;
+  padding: 36px 32px;
+
+  form {
+    button {
+      cursor: pointer;
+    }
+  }
+
+  .Auto {
+    position: relative;
+    width: 160px;
+
+    &:after {
+      position: absolute;
+      width: 150px;
+      height: 8px;
+      background-image: -webkit-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+      background-image: -o-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+      background-image: radial-gradient(circle 5px, #eee 30%, transparent 30%);
+      background-size: 4px 7px;
+      content: '';
+      right: -73px;
+      top: 70px;
+      border-bottom: none;
+      transform: rotateZ(90deg);
+    }
+
+    .Options {
+      display: flex;
+      flex-wrap: wrap;
+
+      .CustomAuto {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+        padding-right: 10px;
+
+        input {
+          width: 70px;
+          margin-right: 10px;
+        }
+
+        .Unit {
+        }
+      }
+
+      button {
+        background-color: #fff;
+        color: #808080;
+        border-color: #eee;
+        line-height: 28px;
+        padding: 0 17px;
+        font-size: 0.9375rem;
+
+        &.active {
+          background-color: #4cbff5;
+          color: #fff;
+          border-color: #4cbff5;
+          box-shadow: none !important;
+          cursor: auto;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .Custom {
+    margin-left: 30px;
+
+    .SingleDatePicker {
+      .SingleDatePickerInput {
+        border-color: #eee;
+      }
+
+      .DateInput_input {
+        font-size: 0.9rem;
+      }
+
+      .SingleDatePickerInput_arrow_svg {
+        fill: #ddd;
+      }
+    }
+
+    .Error {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #ff443e;
+      background-color: rgba(255, 68, 62, 0.2);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .FormFilterHistoricalDay {
+    flex-direction: column !important;
+
+    .Auto {
+      width: 100%;
+
+      &:after {
+        display: none;
+      }
+
+      .Options {
+        justify-content: center;
+
+        .CustomAuto {
+          justify-content: center;
+        }
+
+        button {
+          margin-bottom: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .Custom {
+      width: 100%;
+      margin-left: 0;
+
+      .SingleDatePicker {
+        width: 100%;
+        text-align: center;
+
+        .DateInput {
+          width: 100px;
+
+          input {
+            text-align: center;
+            padding: 6px 10px 3px;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .Error {
+        text-align: center;
+        font-size: 0.875rem;
+        color: #ff443e;
+        background-color: rgba(255, 68, 62, 0.2);
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

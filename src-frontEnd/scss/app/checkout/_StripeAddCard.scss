@@ -1,0 +1,92 @@
+.StripeAddCard {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.01);
+        opacity: 0.2;
+        z-index: 9;
+        transition: all 300ms ease-in-out;
+    }
+
+    &.ready {
+        &:after {
+            z-index: -1;
+            display: none;
+        }
+    }
+
+    form {
+        max-width: 500px;
+
+        legend {
+            display: block;
+            margin-bottom: .5rem;
+            position: relative;
+            width: 100%;
+            letter-spacing: .06rem;
+            font-size: .8rem;
+            color: #bbb;
+            text-transform: uppercase;
+            overflow: hidden;
+
+            &:after {
+                content: "";
+                width: 100%;
+                position: absolute;
+                height: 1px;
+                top: .5rem;
+                margin-left: .25rem;
+                background: #dfdfdf;
+            }
+        }
+
+        .Error {
+            color: #ed4f32;
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 21px;
+            min-height: 21px;
+            margin-top: 1rem;
+        }
+
+        .Name {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+    }
+
+    .StripeElement, .Name {
+        margin: 10px 0 0 0;
+        max-width: 500px;
+        border-radius: 4px;
+        background: white;
+        padding: 10px 14px;
+        width: 100%;
+        border: 1px solid #dfdfdf;
+        font-size: 1rem;
+        color: #444;
+        transition: all .2s ease-in-out;
+        outline: 0;
+        display: inline-block;
+        text-align: left;
+
+        &::placeholder {
+            color: #aab7c4;
+        }
+    }
+
+    .StripeElement--focus {
+        transition: all 150ms ease;
+    }
+
+    .InputElement {
+        font-size: 16px;
+        height: 50px;
+    }
+}

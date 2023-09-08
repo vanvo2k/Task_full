@@ -1,0 +1,44 @@
+.StatisticRankRanges {
+    &.card{
+        box-shadow: none;
+        border: 1px solid #f4f4f4;
+        overflow: hidden;
+    }
+
+    .card-header {
+        background-color: #f2fbff;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+        font-weight: 500;
+        border-bottom: none;
+    }
+
+    table {
+        min-height: 200px;
+        margin-bottom: 0;
+
+        tbody{
+            font-size: 1rem;
+            color: #808080;
+        }
+
+        tr {
+
+            &:nth-child(even){
+                background-color: #fafafa;
+            }
+        }
+
+        td{
+            padding: 16px 20px;
+            border-top: none;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .StatisticRankRanges {
+        margin-bottom: 30px;
+    }
+}

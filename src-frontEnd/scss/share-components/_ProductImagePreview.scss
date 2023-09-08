@@ -1,0 +1,28 @@
+.ProductImagePreview {
+    display: block;
+    background: no-repeat;
+    background-size: 230%;
+    background-position: 50%;
+    height: 0;
+    position: relative;
+    padding-bottom: 120.45%;
+    overflow: hidden;
+
+    &.cropped {
+        background-size: 100%;
+        background-position: top center;
+    }
+
+    &.noThumbnail {
+        background: url("/assets/images/no-image.svg") center center no-repeat !important;
+        background-size: 80%;
+        border: 1px solid #ddd;
+    }
+
+    img {
+        min-width: 100%;
+        opacity: 0;
+        min-height: 100%;
+        height: auto;
+    }
+}

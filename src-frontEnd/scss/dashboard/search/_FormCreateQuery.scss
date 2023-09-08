@@ -1,0 +1,19 @@
+.FormCreateQuery {
+    .popover-body {
+        padding: 20px;
+
+        form {
+            input {
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                line-height: 26px;
+                height: auto;
+            }
+
+            button {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

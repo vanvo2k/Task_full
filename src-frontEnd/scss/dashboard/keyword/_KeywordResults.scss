@@ -1,0 +1,176 @@
+.KeywordResults {
+    margin-bottom: 40px;
+
+    .Wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1rem;
+
+        & > div {
+            border-left: 1px dotted #eee;
+            border-right: 1px dotted #eee;
+            border-bottom: 1px solid #eee;
+
+            &.OrderColumn {
+                border-left: 1px solid #eee;
+            }
+
+            &:last-child {
+                border-right: 1px solid #eee;
+            }
+        }
+    }
+
+    .Index {
+        justify-content: center;
+    }
+
+    .Item, .Index {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+
+        &:nth-child(even) {
+            background-color: #fafafa;
+        }
+    }
+
+    .Text, .Number {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .Text {
+        padding-left: 100px;
+        width: 60%;
+    }
+
+    .Number {
+        text-align: right;
+        padding-right: 100px;
+        width: 40%;
+    }
+
+    .Header {
+        height: 40px;
+        line-height: 40px;
+        color: #808080;
+        font-weight: 500;
+    }
+
+    .Body {
+        .Text {
+            font-weight: 300;
+
+            & > a {
+                position: relative;
+                padding-right: 5px;
+                display: inline-block;
+
+                &:after {
+                    position: absolute;
+                    width: 250px;
+                    height: 3px;
+                    left: 100%;
+                    background-image: -webkit-radial-gradient(circle 5px, #eee 30%, transparent 0);
+                    background-image: -o-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+                    background-image: -webkit-radial-gradient(circle 5px, #aaa 30%, transparent 0);
+                    background-image: -o-radial-gradient(circle 5px, #aaa 30%, transparent 30%);
+                    background-image: radial-gradient(circle 5px, #aaa 30%, transparent 0);
+                    background-size: 4px 7px;
+                    content: "";
+                    top: 50%;
+                    border-bottom: none;
+                    -ms-transform: rotate(90deg);
+                }
+            }
+        }
+
+        .Number {
+            & > span {
+                position: relative;
+                padding-left: 5px;
+
+                &:before {
+                    position: absolute;
+                    width: 250px;
+                    height: 3px;
+                    right: 100%;
+                    background-image: -webkit-radial-gradient(circle 5px, #eee 30%, transparent 0);
+                    background-image: -o-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+                    background-image: -webkit-radial-gradient(circle 5px, #aaa 30%, transparent 0);
+                    background-image: -o-radial-gradient(circle 5px, #aaa 30%, transparent 30%);
+                    background-image: radial-gradient(circle 5px, #aaa 30%, transparent 0);
+                    background-size: 4px 7px;
+                    content: "";
+                    top: 50%;
+                    border-bottom: none;
+                    -ms-transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    .KeywordColumn {
+        flex-grow: 1;
+        margin-left: -1px;
+
+        .Header {
+            background-color: #f2fbff;
+        }
+    }
+
+    .OrderColumn {
+        width: 60px;
+        text-align: center;
+
+        .Header {
+            background-color: #d9f3ff;
+        }
+        .Body {
+            font-size: 0.9375rem;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    body .KeywordResults {
+        .Text {
+            padding-left: 40px;
+        }
+
+        .Number {
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body .KeywordResults {
+        .OrderColumn {
+            display: none;
+        }
+
+        .Body .Text > a {
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+
+        .KeywordColumn {
+            width: 100%;
+            margin-left: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .Text {
+            padding-left: 10px;
+        }
+
+        .Number {
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,241 @@
+.ModalShowItemDetail {
+    max-width: 80%;
+
+    .Title {
+        a {
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .modal-body {
+        min-height: 600px;
+        padding-left: 30px;
+
+        .ChartRankItem {
+            .ShowDays {
+                button {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .Title {
+            font-size: 22px;
+            padding-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .BodyLeft {
+            .WrapperLeft {
+                position: relative;
+            }
+
+            a {
+                display: block;
+
+                img {
+                    max-width: 100%;
+                    max-height: 300px;
+                }
+            }
+        }
+
+        .BodyRight {
+            position: relative;
+
+            .WrapperBodyRight {
+                max-height: 350px;
+                overflow-y: auto;
+            }
+
+            .Listed {
+                margin-bottom: 5px;
+                margin-left: 4px;
+                color: #808080;
+                font-size: 15px;
+
+                > span:first-child {
+                    font-weight: 500;
+                    color: #333333
+                }
+
+                &.ASIN {
+                    .ASINImg {
+                        max-width: 105px;
+                        height: auto;
+                        max-height: 17px;
+                        margin-bottom: 2px;
+                    }
+
+                    .ButtonCopyToClipboard {
+                        padding: 1px;
+                        cursor: pointer;
+                        color: #808080;
+                        display: inline-block;
+                    }
+
+                    .Link {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .previous-item {
+        margin-right: 15px;
+    }
+
+    .CloseButton {
+        .btn {
+            background: none;
+            color: #fff;
+            border: none;
+            margin: -40px -40px 0 0;
+            font-size: 25px;
+        }
+    }
+    .Next {
+        .btn {
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 1.4px 1.4px 16px 0 rgba(0, 0, 0, 0.1);
+            color: #aaaaaa;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            right: -25px;
+
+            &:disabled {
+                cursor: auto;
+            }
+        }
+    }
+
+    .Previous {
+        .btn {
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 1.4px 1.4px 16px 0 rgba(0, 0, 0, 0.1);
+            color: #aaaaaa;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: -25px;
+
+            &:disabled {
+                cursor: auto;
+            }
+        }
+    }
+
+    .ModalShowItemDetailBody {
+        &.c- {
+            &popsockets {
+                .BodyLeft {
+                    .WrapperLeft {
+                        .ProductImagePreview {
+                            background-size: 100%;
+                            padding-bottom: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .ModalShowItemDetail {
+        max-width: 1000px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    body .ModalShowItemDetail {
+        max-width: 100%;
+
+        .ranks {
+            display: none;
+        }
+
+        .CloseButton {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 9;
+
+            button.btn {
+                margin: 0;
+                background-color: rgba(255, 68, 62, 1);
+                padding: 0;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                border-radius: unset;
+            }
+
+            span:before {
+                font-size: 20px;
+            }
+        }
+
+        .modal-body {
+            padding-left: 16px;
+
+            .BodyLeft {
+                .WrapperLeft {
+                    .ButtonAddFavorites {
+                        left: 5px;
+                        right: auto;
+                    }
+                }
+            }
+
+            .BodyRight {
+                .Description {
+                    display: none;
+                }
+            }
+        }
+
+        .Next, .Previous {
+            span:before {
+                font-size: 18px;
+                color: #000;
+                font-weight: 500;
+            }
+
+            .btn {
+                width: 40px;
+                height: 40px;
+                opacity: 0.9;
+                line-height: 40px;
+                padding: 0;
+                top: 150px;
+            }
+        }
+
+        .Next .btn {
+            right: -5px;
+
+        }
+
+        .Previous .btn {
+            left: -5px;
+        }
+
+        .modal-body .Title {
+            font-size: 20px;
+            line-height: 1.3;
+        }
+    }
+}

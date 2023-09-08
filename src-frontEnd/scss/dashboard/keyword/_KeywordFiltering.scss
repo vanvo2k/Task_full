@@ -1,0 +1,130 @@
+.KeywordFiltering {
+    font-size: 0.9375rem;
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    .form-control {
+        min-width: 200px;
+    }
+
+    .Filter {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &:last-child {
+            margin-left: 20px;
+        }
+
+        label {
+            margin-bottom: 0;
+            color: #808080;
+            margin-right: 10px;
+        }
+
+        input {
+            color: $tamz_font_color;
+            font-size: 0.9375rem;
+        }
+
+        .SingleDatePickerInput {
+            .DateInput {
+                input {
+                    line-height: 25px;
+                    padding: 6px 10px 2px;
+                    border: 1px solid #eee;
+                    border-radius: 5px;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .Options {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Selects {
+        display: none;
+    }
+
+    .Option {
+        padding: 0 20px;
+        height: 35px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        line-height: 35px;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            background-color: #eee;
+            border-color: #eee;
+        }
+
+        &.active {
+            color: #fff;
+            background-color: #4cbff5;
+            border-color: #4cbff5;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body .KeywordFiltering {
+        & > form {
+            display: block !important;
+        }
+
+        .Filter {
+            justify-content: space-between;
+
+            &:last-child {
+                margin-left: 0;
+
+                .form-control {
+                    min-width: 130px;
+                }
+            }
+
+            &:nth-child(2) {
+                .form-control {
+                    min-width: 240px;
+                    text-align: right;
+                }
+            }
+
+            .SearchTermKeywords {
+                width: 100%;
+            }
+
+            .react-datepicker-wrapper, .react-datepicker__input-container {
+                display: block;
+            }
+        }
+
+        .Options {
+            display: none;
+        }
+
+        .Selects {
+            display: block;
+        }
+
+        .Option {
+            width: calc(50% - 10px);
+            margin-right: 0 !important;
+            margin-bottom: 10px;
+
+            &:nth-child(even) {
+                margin-left: 20px;
+            }
+        }
+    }
+}

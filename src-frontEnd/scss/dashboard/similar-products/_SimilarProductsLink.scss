@@ -1,0 +1,9 @@
+.SimilarProductsLink {
+    cursor: pointer;
+    color: #aaa;
+    transition: all 200ms ease-out;
+
+    &:hover {
+        color: #666;
+    }
+}

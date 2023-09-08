@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+@import url('/assets/css/ionicons.css');
+@import url('/assets/css/linearicons.css');
+
+body {
+    font-family: $tamz_font_family;
+    color: $tamz_font_color;
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding-bottom: 0!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+.overflow {
+    overflow: auto;
+}

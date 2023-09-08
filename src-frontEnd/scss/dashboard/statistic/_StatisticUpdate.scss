@@ -1,0 +1,120 @@
+.StatisticUpdate {
+    .Count {
+        color: #333333;
+        margin-bottom: 47px;
+        
+        .card {
+            height: 100%;
+            box-shadow: 4.2px 4.2px 16px 0 rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+        }
+
+        .Box {
+            margin-bottom: 15px;
+        }
+
+        .card-body {
+            padding: 26px 30px 17px 30px;
+            .Label {
+                position: relative;
+                font-size: 1rem;
+                margin-top: 20px;
+                
+
+                // &:before {
+                //     content: "";
+                //     position: absolute;
+                //     top: 2px;
+                //     left: 0;
+                //     width: 3px;
+                //     height: 18px;
+                //     background-color: #fff;
+                //     opacity: .3;
+                // }
+            }
+
+            .Number {
+                font-size: 2.0625rem;
+                font-weight: 700;
+            }
+
+            .Percent {
+                font-size: 1rem;
+                font-style: italic;
+                font-weight: 400;
+                display: block;
+                margin-top: -5px;
+            }
+        }
+
+        // .progress {
+        //     background-color: #fff;
+        // }
+
+        // .Total.card {
+        //     background-color: #2ecc71;
+        // }
+
+        // .Deleted.card {
+        //     background-color: #e74c3c;
+        // }
+
+        // .Rank.card {
+        //     background-color: #16a085;
+
+        //     .progress-bar {
+        //         background-color: #26b291;
+        //     }
+        // }
+
+        // .Updated.card {
+        //     background-color: #3498db;
+
+        //     .progress-bar {
+        //         background-color: #2677b2;
+        //     }
+        // }
+
+        // .New.card {
+        //     background-color: #2980b9;
+        // }
+
+        // .Added.card {
+        //     background-color: #f58625;
+        // }
+    }
+
+    .Number-small {
+        font-size: 1rem;
+        font-style: italic;
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .StatisticUpdate {
+        .Count {
+            .card-body {
+                padding: 21px 10px 7px;;
+
+                .Number {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1280px){
+    .StatisticUpdate {
+        .Count {
+            .card-body {
+
+
+                .Number {
+                    font-size: 1.45rem;
+                }
+            }
+        }
+    }
+}

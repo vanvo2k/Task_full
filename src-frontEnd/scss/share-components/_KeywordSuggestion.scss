@@ -1,0 +1,40 @@
+.Wrapper {
+  .Title {
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      margin: 4px;
+    }
+  }
+
+  .KeywordSuggestion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    .KeywordSuggestionItem {
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 16px;
+      opacity: 0.85;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 4px 16px;
+      }
+    }
+  }
+}

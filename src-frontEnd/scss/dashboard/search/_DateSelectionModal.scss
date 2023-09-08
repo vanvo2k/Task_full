@@ -1,0 +1,127 @@
+.DateSelectionModal {
+  max-width: 80%;
+
+  .modal-body {
+    text-align: center;
+
+    .Title {
+      font-size: 22px;
+      font-weight: normal;
+      color: $tamz_primary_color;
+    }
+
+    .FormFilterHistoricalDayModal {
+      display: inline-flex;
+
+      .Auto {
+        width: 190px;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          width: 150px;
+          height: 8px;
+          background-image: -webkit-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+          background-image: -o-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+          background-image: radial-gradient(circle 5px, #eee 30%, transparent 30%);
+          background-size: 4px 7px;
+          content: '';
+          right: -73px;
+          top: 70px;
+          border-bottom: none;
+          transform: rotateZ(90deg);
+        }
+
+        .Options {
+          display: flex;
+          flex-wrap: wrap;
+
+          button {
+            background-color: #fff;
+            color: #808080;
+            border-color: #eee;
+            line-height: 28px;
+            padding: 7px 17px;
+            font-size: 0.9375rem;
+
+            &.active {
+              background-color: #4cbff5;
+              color: #fff;
+              border-color: #4cbff5;
+              box-shadow: none !important;
+              cursor: auto;
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .Error {
+      font-size: 0.875rem;
+      color: #ff443e;
+      background-color: rgba(255, 68, 62, 0.2);
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+  }
+
+  .CloseButton {
+    .btn {
+      background: none;
+      color: #fff;
+      border: none;
+      margin: -40px -40px 0 0;
+      font-size: 25px;
+    }
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .DateSelectionModal {
+    max-width: 700px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  body .DateSelectionModal {
+    max-width: 100%;
+
+    .ranks {
+      display: none;
+    }
+
+    .CloseButton {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9;
+
+      button.btn {
+        margin: 0;
+        background-color: rgba(255, 68, 62, 1);
+        padding: 0;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: unset;
+      }
+
+      span:before {
+        font-size: 20px;
+      }
+    }
+
+    .modal-body {
+      padding-left: 16px;
+    }
+
+    .modal-body .Title {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  }
+}

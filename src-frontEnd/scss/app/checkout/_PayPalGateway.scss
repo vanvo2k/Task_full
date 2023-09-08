@@ -1,0 +1,20 @@
+.PayPalGateway {
+    background: url("/assets/images/paypal-badges.png") no-repeat top right;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+
+    .HeaderGateway {
+        padding-bottom: 20px;
+    }
+
+    .Description {
+        color: #515151;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .PayPalGateway {
+        background-size: 50%;
+    }
+}

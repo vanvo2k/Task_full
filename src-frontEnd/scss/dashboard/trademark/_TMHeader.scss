@@ -1,0 +1,17 @@
+.TMHeader {
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 0.9375rem;
+
+    .Controls {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .TMHeader {
+        .TMStatistic {
+            margin-left: 0 !important;
+        }
+    }
+}

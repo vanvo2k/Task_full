@@ -1,0 +1,120 @@
+.SideBarSettings {
+    width: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #eee;
+
+    .TopSidebar {
+        text-align: center;
+
+        .Logo {
+            display: block;
+            background: url(/assets/images/logo-v1.png) no-repeat center center;
+            width: 101px;
+            height: 66px;
+            margin: 32px auto 48px;
+            background-size: contain;
+        }
+
+        .nav {
+            margin: 0 20px;
+
+            .nav-item {
+                height: 55px;
+                line-height: 55px;
+                transition: all .3s;
+
+                &:not(:last-child) {
+                    margin-bottom: 18px;
+                }
+
+                .nav-link {
+                    position: relative;
+                    padding: 0;
+
+                    &:before {
+                        content: "\e90b";
+                        position: absolute;
+                        left: 45px;
+                        top: 0;
+                        font-family: LinearIcons;
+                        font-size: 1.875rem;
+                    }
+
+                    &[href*="/settings/billing"]:before {
+                        content: "\e75e";
+                    }
+
+                    &[href*="/settings/profile"]:before {
+                        content: "\e71b";
+                    }
+                    &[href*="/settings/referral"]:before {
+                        content: "\e726";
+                    }
+                    &[href*="/settings/affiliate"]:before {
+                        content: "\e726";
+                    }
+                    &[href*="/settings/search"]:before {
+                        content: "\e922";
+                    }
+                }
+
+                &.active, &:hover {
+                    background-color: $tamz_primary_color;
+                    border-radius: 5px;
+                    box-shadow: 4.2px 4.2px 16px 0 rgba(0, 0, 0, 0.08);
+
+                    .nav-link {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .UserMenu {
+        padding-left: 30px;
+        padding-bottom: 40px;
+
+        img.avatar {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .dropdown-toggle:after {
+            border-top: 0.25em solid transparent;
+            border-left: 0.3em solid #333;
+            border-bottom: 0.25em solid transparent;
+            vertical-align: baseline;
+            margin-left: 8px;
+        }
+
+        /*.dropdown-menu{
+            left: calc(100% - 8px) !important;
+            transform: none !important;
+            bottom: 14px !important;
+            top: unset !important;
+            border-radius: 5px;
+            box-shadow: 4.2px 4.2px 18px 0 rgba(0, 0, 0, 0.06);
+            border: solid 1px #eeeeee;
+        }*/
+
+        .dropdown {
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .dropdown-menu{
+            left: 100% !important;
+            transform: none !important;
+            top: unset !important;
+            bottom: 10px !important;
+            border-radius: 5px;
+            box-shadow: 4.2px 4.2px 18px 0 rgba(0, 0, 0, 0.06);
+            border: solid 1px #eeeeee;
+        }
+    }
+}

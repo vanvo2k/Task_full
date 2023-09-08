@@ -1,0 +1,106 @@
+.EventActions {
+    background-color: #fff;
+    color: #333;
+    position: relative;
+    z-index: 10;
+    padding: 10px 10px;
+
+    .ShowDetails {
+        cursor: pointer;
+    }
+
+    .TimeLeft {
+        position: absolute;
+        top: -37px;
+        right: 0;
+        background-color: #444;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 0.875rem;
+        line-height: 27px;
+
+        .Icon {
+            margin-right: 7px;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    .Area {
+        .Icon {
+            margin-right: 2px;
+        }
+    }
+}
+
+.popup-event-detail{
+    max-width: 1140px;
+
+    .event-info{
+        margin:0 0 40px;
+
+        .event-thumb{
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .event-meta{
+            .meta-item{
+                font-size: 16px;
+                i{
+                    margin-right: 5px;
+                }
+            }
+            .event-desc{
+                margin:10px 0 0;
+            }
+        }
+    }
+}
+
+.calendar-toolbar {
+    display: flex;
+
+    .calendar-toolbar-date{
+        text-align: center;
+        flex-grow: 1;
+        font-size: 30px;
+    }
+
+    .calendar-toolbar-buttons{
+        button{
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            display: inline-block;
+            margin: 0 1px;
+
+            &:hover{
+                cursor: pointer;
+                background: #03A9F4;
+                color: #ffffff;
+            }
+
+            &:focus{
+                outline: none;
+            }
+
+            &:disabled{
+                color: rgba(16, 16, 16, 0.3);
+                background-color: rgba(239, 239, 239, 0.3);
+                border-color: rgba(118, 118, 118, 0.3);
+            }
+        }
+    }
+}
+.rbc-row-content{
+    .rbc-row-segment {
+        padding: 0 5px 5px 5px;
+        .rbc-event{
+            background: #03A9F4;
+        }
+        .rbc-event-content{
+            font-size: 15px;
+        }
+    }
+}

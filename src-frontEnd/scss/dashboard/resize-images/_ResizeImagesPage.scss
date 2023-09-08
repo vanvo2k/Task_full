@@ -1,0 +1,30 @@
+.ResizeImagesPage {
+    background-color: #fff;
+    min-height: 100vh;
+
+    .Guide {
+        margin-bottom: 20px;
+        white-space: pre-line;
+    }
+
+    .Main {
+        position: relative;
+        margin-bottom: 50px;
+
+        .Iframes {
+            .Iframe {
+                width: 100%;
+                min-height: 202px;
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        white-space: pre-line;
+    }
+}

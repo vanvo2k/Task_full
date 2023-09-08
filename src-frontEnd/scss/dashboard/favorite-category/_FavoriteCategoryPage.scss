@@ -1,0 +1,15 @@
+.FavoriteCategoryPage {
+    .BtnChangeMode {
+        padding: 8px 10px;
+        line-height: 1;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        
+        &.active {
+            color: #fff;
+            background-color: #4cbff5;
+        }
+    }
+}

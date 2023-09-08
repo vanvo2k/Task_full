@@ -1,0 +1,66 @@
+.CheckoutPage {
+    @import "CurrentMembership";
+    @import "StripeAddCard";
+    @import "StripeCard";
+    @import "StripePayment";
+    @import "CurrentPlan";
+    @import "PaymentMethods";
+    @import "ButtonCheckout";
+    @import "OrderTotal";
+    @import "RedeemCoupon";
+    @import "StripeGateway";
+    @import "PayPalGateway";
+    @import "./PayoneerGateway";
+
+    margin: 30px 0;
+    padding: 10px 0;
+
+    h1 {
+        font-size: 1.6rem;
+        margin: 1rem 0 2rem;
+    }
+
+    .CheckoutFailed {
+        color: #ed4f32;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 21px;
+        min-height: 21px;
+        background-color: #ffcdd2;
+        border-left: 3px solid #ed4f32;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        .Goto {
+            margin-top: 20px;
+
+            .Pricing {
+                margin-right: 10px;
+            }
+
+            .Billing {
+                color: #333;
+            }
+        }
+    }
+
+    .Title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .GoHome {
+        font-size: 0.875rem;
+        margin: 30px auto;
+
+        a {
+            color: #999;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .CheckoutPage {
+
+    }
+}

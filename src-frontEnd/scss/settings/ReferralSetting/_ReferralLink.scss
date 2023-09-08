@@ -1,0 +1,49 @@
+.ReferralLink {
+    color: #A0A0A0;
+    margin-bottom: 40px;
+    font-size: 17px;
+
+    .card {
+        border: 2px solid #F1F1F1;
+        border-radius: 5px;
+        box-shadow: 5.7px 5.7px 18px 0 rgba(0, 0, 0, 0.06);
+        .card-body {
+            .card-title {
+                color: #535353;
+            }
+
+            .Sharing {
+                .card-title {
+                    color: #535353;
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .Link {
+                    border: 1px solid #dfdfdf;;
+                    padding: 0.5rem 10px;
+                    line-height: 1.25;
+                    border-radius: 0.25rem;
+                    background-color: white;
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                    }
+                }
+
+                .Copy {
+                    cursor: pointer;
+                }
+            }
+
+            .Assets {
+                margin-top: 20px;
+                font-size: 0.9rem;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

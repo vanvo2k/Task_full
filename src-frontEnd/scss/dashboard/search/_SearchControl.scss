@@ -1,0 +1,56 @@
+.SearchControl {
+    display: flex;
+    position: relative;
+    padding-right: 28px;
+
+    .SearchType {
+        width: auto;
+
+        &:checked {
+            background-color: $tamz_primary_color;
+            color: #fff;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        width: 35px;
+        height: 8px;
+        background-image: radial-gradient(circle 5px, #eee 30%, transparent 30%);
+        background-size: 4px 7px;
+        content: '';
+        right: -17px;
+        top: 12px;
+        border-bottom: none;
+        transform: rotateZ(90deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    body .SearchControl {
+        margin-bottom: 10px;
+
+        &:after {
+            content: none;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    body .SearchControl {
+        padding-right: 0;
+        width: 100%;
+
+        .SearchTerm {
+            width: 100%;
+
+            .IconSearch {
+                display: none;
+            }
+        }
+
+        .SearchExcludedKeyword {
+            display: none;
+        }
+    }
+}

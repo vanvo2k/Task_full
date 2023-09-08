@@ -1,0 +1,124 @@
+.PaginationItems {
+    font-size: 1rem;
+
+    .pagination {
+        margin-bottom: 0;
+    }
+
+    .page-item {
+        min-width: 40px;
+        height: 40px;
+        text-align: center;
+        cursor: pointer;
+
+        &.disabled {
+            opacity: 0.5;
+        }
+
+        &.active {
+            .page-link {
+                color: #fff;
+            }
+        }
+
+        &:first-child, &:last-child {
+            position: relative;
+
+            .page-link {
+                font-size: 0;
+                height: 38px;
+
+                &:before {
+                    position: absolute;
+                    font-family: Ionicons, serif;
+                    width: 35px;
+                    height: 35px;
+                    color: #aaa;
+                    background-color: #fff;
+                    z-index: 9;
+                    font-size: 1.25rem;
+                    line-height: 36px;
+                    border-radius: 5px;
+                }
+
+                &:hover {
+                    &:before {
+                        background-color: #eee;
+                    }
+                }
+            }
+        }
+
+        &:first-child {
+            .page-link {
+                &:before {
+                    content: "\f3cf";
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &:last-child {
+            .page-link {
+                &:before {
+                    content: "\f3d1";
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        .page-link {
+            border-color: #eee;
+            border-radius: 5px;
+            color: #aaa;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    li:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .break {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        line-height: 35px;
+        color: #aaa;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .PaginationItems {
+        width: 100%;
+
+        .pagination {
+            .page-item {
+                &.Previous, &.Next {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .PaginationItems {
+        width: 100%;
+
+        .pagination {
+            .page-item {
+                &.Previous, &.Next {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.ListProductsByCategory {
+    display: flex;
+    margin: 0 -5px 10px;
+
+    .Product {
+        padding: 0 5px;
+
+        &.noBackground {
+            .Preview {
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    max-width: 100%;
+                    min-height: 100px;
+                }
+            }
+        }
+
+        &:not(.isCropped) {
+            .Preview {
+                background-size: 250%;
+            }
+        }
+
+        .Preview {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #eee;
+            background-position: center;
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 120%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                opacity: 0;
+            }
+        }
+
+        &.c- {
+            &popsockets {
+                .Preview {
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+}

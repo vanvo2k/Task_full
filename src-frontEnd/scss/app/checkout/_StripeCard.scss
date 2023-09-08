@@ -1,0 +1,41 @@
+.StripeCard {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 350px;
+    position: relative;
+
+    .Brand {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .Number {
+        margin-bottom: 20px;
+    }
+
+    .Expires {
+        font-size: 0.8rem;
+        color: #666;
+
+        .Label {
+            color: #999;
+            margin-right: 10px;
+        }
+    }
+
+    .Remove {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        display: none;
+    }
+
+    &:hover {
+        .Remove {
+            display: inline-block;
+        }
+    }
+}

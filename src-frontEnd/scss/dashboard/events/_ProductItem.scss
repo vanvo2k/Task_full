@@ -1,0 +1,45 @@
+.ProductItem {
+    margin-bottom: 0;
+    font-size: 1rem;
+
+    .Bottom {
+        .rank {
+            padding-bottom: 3px;
+        }
+
+        .Name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 22px;
+            max-height: 44px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 5px;
+        }
+
+        .Brand {
+            @extend %text-ellipsis;
+
+            .Title {
+                color: #666;
+            }
+
+            .Value {
+                a {
+                    &:first-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    &:last-child {
+                        color: #333;
+                        margin-left: 5px;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}

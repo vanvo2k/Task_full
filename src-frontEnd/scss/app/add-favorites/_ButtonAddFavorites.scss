@@ -1,0 +1,50 @@
+.ButtonAddFavorites {
+    padding: 4px 7px;
+    font-size: 0.875rem;
+    text-align: center;
+    background-color: #ff443e;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    display: inline-block;
+
+    .Text {
+        padding-left: 4px;
+    }
+}
+
+.FavoriteAndIgnore {
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    z-index: 9;
+}
+
+.Item {
+    &:hover {
+        .ButtonAddFavorites {
+            opacity: 1;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+        }
+    }
+}
+
+.ItemTable {
+    .ButtonAddFavorites {
+        .Text {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .ButtonAddFavorites {
+        opacity: 1;
+
+        .Text {
+            display: none;
+        }
+    }
+}

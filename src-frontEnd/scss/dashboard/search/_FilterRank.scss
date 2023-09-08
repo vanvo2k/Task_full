@@ -1,0 +1,49 @@
+.FilterRank {
+    border: 1px solid #eee;
+    min-height: 34px;
+    @include border-radius(5px);
+
+    .Content {
+        color: #808080;
+
+        .Editable {
+            position: absolute;
+            top: 0;
+            right: -16px;
+            bottom: 0;
+            display: none;
+            font-size: 0.8em;
+        }
+
+        &:focus, &:active, &:hover {
+            text-decoration: none;
+            outline: none;
+        }
+
+        &:hover {
+            color: theme-color('primary');
+            cursor: pointer;
+
+            .Editable {
+                display: inline-block;
+            }
+        }
+
+        i {
+            margin-right: 10px;
+        }
+    }
+
+    &.isActive{
+        background-color: #4cbff5;
+        border-color: #4cbff5;
+
+        .Content, i{
+            color: #fff;
+        }
+    }
+}
+
+.icon-exclamation-img {
+    width: 18px;
+}

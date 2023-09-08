@@ -1,0 +1,39 @@
+@import "SimilarProductsLink";
+@import "FormFilterRank";
+@import "ModalShowItemDetail";
+@import "TableItemsMeta";
+@import "Item";
+@import "PaginationItems";
+@import "ItemsExplorerHeader";
+@import "SearchTerm";
+@import "FilterPrice";
+@import "FilterType";
+@import "FilterBrandType";
+@import "FilterRank";
+@import "FilterTimeAvailable";
+@import "FilterStatus";
+@import "FilterMarket";
+@import "SortControl";
+@import "SearchControl";
+@import "SearchExcludedKeyword";
+@import "AnalyticActions";
+@import "FilterControl";
+@import "SearchResult";
+@import "SearchType";
+@import "NoItems";
+@import "TableListItem";
+@import "TableItemsFooter";
+@import "ShowPerPage";
+@import "SwitchLayout";
+@import "SearchItemsPage";
+@import "FormCreateQuery";
+@import "FilterHistoricalDay";
+@import "AnalyticsKeyword";
+@import "DateSelectionModal";
+
+.QueryAnnouncement {
+    clear: both;
+    font-size: 15px;
+    margin-bottom: 16px;
+    font-style: italic;
+}

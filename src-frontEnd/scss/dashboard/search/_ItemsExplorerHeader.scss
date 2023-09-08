@@ -1,0 +1,167 @@
+.ItemsExplorerHeader {
+    font-size: 0.9375rem;
+
+    .Top {
+        position: relative;
+        padding: 15px 0;
+        background-color: #fff;
+        margin-bottom: 16px;
+        box-shadow: 2.8px 2.8px 16px 0 rgba(0, 0, 0, 0.08);
+        color: #808080;
+
+        .Wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .form-control {
+            color: #808080;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 20px solid $tamz_primary_color;
+            border-right: 20px solid transparent;
+        }
+    }
+
+    .KeywordChart {
+        display: flex;
+        flex-direction: column;
+
+        .KeywordGoogleTrend {
+            display: flex;
+
+            .SearchTermContainer {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 4px;
+
+                .SearchTermAddBtn {
+                    cursor: pointer;
+                    border-radius: 16px;
+                    border: solid 0.25px grey;
+                    display: inline-flex;
+                    height: 75px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    max-width: 10rem;
+                    outline: none;
+                    justify-content: center;
+                    gap: 35px;
+                    align-items: center;
+                    min-width: 15rem;
+
+                    span {
+                        display: inline-block;
+                    }
+
+                    background-color: rgba(11, 87, 208, .11);
+
+                    &:hover {
+                        background-color: rgba(11, 87, 208, .22);
+                    }
+
+                    &:active {
+                        background-color: rgba(11, 87, 208, .33);
+                    }
+                }
+
+                .SearchTermWrapper {
+                    min-width: 15rem;
+                    position: relative;
+                    border-radius: 16px;
+                    border: solid 0.25px grey;
+                    display: block;
+                    height: 75px;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    .SearchTermCentralize {
+                        width: 100%;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        padding: 0 20px;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .SearchTermInput {
+                        overflow: hidden;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        border: none;
+
+                        &:focus,
+                        &:focus-visible {
+                            background-color: white;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
+                    .SearchTermCancel {
+                        cursor: pointer;
+                        position: absolute;
+                        padding: 4px;
+                        right: 24px;
+                        top: 0;
+                        font-size: 24px;
+                    }
+
+                    .SearchTermDescription {
+                        font-size: 13px;
+                        color: grey;
+                        opacity: 0.95;
+                    }
+                }
+            }
+        }
+    }
+
+    .Bottom {
+        .Wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    body .ItemsExplorerHeader {
+        .Bottom {
+            .Wrapper {
+                display: block;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    body .ItemsExplorerHeader {
+        .Top {
+            &:before {
+                display: none;
+            }
+        }
+
+        .Bottom {
+            .Wrapper {
+                display: flex;
+                align-items: center
+            }
+        }
+    }
+}

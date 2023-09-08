@@ -1,0 +1,27 @@
+.ProductPlaceholder {
+    .Thumbnail {
+        background-size: 230%;
+        background-position: center;
+        height: 0;
+        position: relative;
+        padding-bottom: 120.45%;
+    }
+
+    .Rank, .Meta {
+        height: 15px;
+    }
+
+    .Name {
+        height: 30px;
+    }
+
+    @keyframes placeHolderShimmer{
+
+        0% {
+            background-position: -468px 0;
+        }
+        100% {
+            background-position: 468px 0;
+        }
+    }
+}

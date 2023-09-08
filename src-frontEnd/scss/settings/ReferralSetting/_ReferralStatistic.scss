@@ -1,0 +1,37 @@
+.ReferralStatistic {
+    color: #A0A0A0;
+    font-size: 17px;
+    margin-bottom: 40px;
+    .card-title {
+        color: initial;
+    }
+
+    .card {
+        box-shadow: 5.7px 5.7px 18px 0 rgba(0, 0, 0, 0.06);
+        border: 2px solid #F1F1F1;
+
+        .table {
+            margin: 0;
+
+            .referral-row {
+                border-bottom: 1px solid #eeeeee;
+
+                &:last-child {
+                    border: none;
+                }
+
+                td {
+                    border-top: none;
+
+                    &.row-title {
+                        color: #535353
+                    }
+
+                    &:last-child {
+                        color: #333
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.FormFilterRank {
+    display: flex;
+    padding: 32px 31px;
+
+    .InputNumber {
+        position: relative;
+
+        .Remove {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+
+            &.Removable {
+                display: inline-block;
+            }
+
+            &:after {
+                content: "\f00d";
+                display: block;
+                font-weight: 900;
+                font-family: Font Awesome\ 5 Free, serif;
+                padding: 8px 13px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .Auto {
+        position: relative;
+        width: 160px;
+
+        &:after {
+            position: absolute;
+            width: 190px;
+            height: 8px;
+            background-image: -webkit-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+            background-image: -o-radial-gradient(circle 5px, #eee 30%, transparent 30%);
+            background-image: radial-gradient(circle 5px, #eee 30%, transparent 30%);
+            background-size: 4px 7px;
+            content: '';
+            right: -93px;
+            top: 90px;
+            border-bottom: none;
+            -webkit-transform: rotateZ(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotateZ(90deg);
+        }
+
+        .Options {
+            display: flex;
+            flex-wrap: wrap;
+
+            button {
+                background-color: #fff;
+                color: #808080;
+                border-color: #eee;
+                line-height: 28px;
+                padding: 0 20px;
+                font-size: 0.9375rem;
+
+                &.active {
+                    background-color: #4cbff5;
+                    color: #fff;
+                    border-color: #4cbff5;
+                    box-shadow: none !important;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .Custom {
+        width: 160px;
+        margin-left: 30px;
+
+        .InputNumber {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            .Label {
+                flex: 0 0 50px;
+            }
+        }
+
+        .form-group:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .form-group:last-child {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .FormFilterRank {
+        flex-direction: column !important;
+
+        .Auto {
+            width: auto;
+
+            &:after {
+                display: none;
+            }
+
+            .Options {
+                justify-content: center;
+                margin-bottom: 10px;
+
+                button {
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .Custom {
+            margin-left: 0;
+            width: auto;
+
+            .form-group {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

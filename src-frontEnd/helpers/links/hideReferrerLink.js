@@ -1,0 +1,1 @@
+export default (origin) => 'https://href.li/?' + origin

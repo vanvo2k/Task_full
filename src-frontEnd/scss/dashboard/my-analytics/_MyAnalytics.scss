@@ -1,0 +1,49 @@
+.MyAnalytics {
+    .Title {
+        margin: 1rem 0 2rem;
+    }
+
+    .MyAnalytic {
+        margin-bottom: 1rem;
+
+        .card-title {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        .card-body {
+            > div {
+                margin-bottom: 10px;
+
+                > strong {
+                    display: inline-block;
+                    min-width: 90px;
+                }
+            }
+        }
+
+        .card-footer {
+            .btn {
+                margin-left: 10px;
+            }
+        }
+
+        .Term {
+            span:last-child {
+                font-weight: 500;
+            }
+        }
+
+        .TagItem {
+            display: inline-block;
+            margin-right: 30px;
+
+            .Label {
+                display: block;
+                font-size: 12px;
+                color: #999;
+                text-align: left;
+            }
+        }
+    }
+}

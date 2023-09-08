@@ -1,0 +1,56 @@
+.FilterControl {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    padding-left: 28px;
+
+    & > div {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    i {
+        color: #ccc;
+    }
+
+    .Content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body .FilterControl {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body .FilterControl {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    body .FilterControl {
+        flex-flow: inherit;
+        justify-content: space-between;
+
+        .FilterBrandType {
+            margin-right: 0;
+        }
+
+        .FilterType {
+            display: none;
+        }
+
+        .FilterMinPrice,
+        .FilterMaxPrice,
+        .FilterPrice {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.PageTitle {
+    font-size: 20px;
+    color: #333;
+    padding: 25px 0 20px 0;
+    position: relative;
+
+    .title {
+        font-size: 20px;
+    }
+
+    .tooltip-icon {
+        position: absolute;
+        top: 22px;
+    }
+
+    .icon-exclamation-img {
+        width: 20px;
+    }
+}

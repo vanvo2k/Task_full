@@ -1,0 +1,124 @@
+.dropdown-menu{
+  max-height: 500px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.AdsAnnouncement{
+  margin-right: 15px;
+
+  button{
+    position: relative;
+    background: none;
+    color: #000000;
+    border: none;
+    padding: 0;
+
+    i{
+      font-size: 25px;
+      line-height: 36px;
+    }
+
+    .count{
+      background: red;
+      border-radius: 3px;
+      position: absolute;
+      top:-3px;
+      left:12px;
+      color: #ffffff;
+      font-size: 13px;
+      padding: 0px 5px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+      background: none !important;
+      color: #000000 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    &:hover{
+      i{
+        color: #4267b2;
+      }
+    }
+  }
+  .AdsAnnouncementList{
+    width: 350px;
+    margin: 0;
+    padding: 0;
+
+    .AdsAnnouncementItem{
+      list-style: none;
+      padding: 20px 15px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      &.read{
+        opacity: 0.5;
+      }
+
+      .AnnouncementItemBox{
+        .title{
+          font-size: 18px;
+          font-weight: 600;
+          color: #000000;
+          margin: 0 0 15px;
+        }
+        .description{
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          /* autoprefixer: off */
+          overflow: hidden;
+          font-size: 14px;
+          margin: 0 0 5px;
+        }
+        .time{
+          font-size: 12px;
+
+          i{
+            margin-right: 5px;
+          }
+        }
+
+        .NoNotifications {
+          i {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &:hover{
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.05);
+      }
+    }
+  }
+}
+
+.popup-announcement{
+  .modal-closer{
+    position: absolute;
+    top:0px;
+    right:10px;
+    text-align: center;
+
+    i{
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 40px;
+      transition: all 0.3s ease 0s;
+    }
+
+    &:hover{
+      cursor: pointer;
+
+      i{
+        color: red;
+      }
+    }
+  }
+}

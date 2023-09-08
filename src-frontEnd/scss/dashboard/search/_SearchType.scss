@@ -1,0 +1,11 @@
+.SearchType {
+    border-radius: 5px 0 0 5px;
+}
+
+.SelectWrapper {
+    background-color: #fafafa;
+
+    select.SearchType {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,74 @@
+.ItemTrademark {
+    text-align: center;
+
+    &:hover {
+        .Actions {
+            .Read {
+                color: #333;
+            }
+
+            .Refresh {
+                color: #37af56;
+            }
+
+            .Remove {
+                color: #ff443e;
+            }
+        }
+    }
+
+    &.completed {
+        .Text, .Warnings {
+            color: #37af56;
+        }
+
+        &.notSafe {
+            .Text, .Warnings {
+                cursor: pointer;
+                color: #ff443e;
+            }
+        }
+    }
+
+    &.refreshing {
+        .Actions {
+            .Refresh {
+                animation: _spinner 1s linear infinite;
+            }
+        }
+    }
+
+    &:nth-child(odd) {
+        background-color: #fafafa;
+    }
+
+    .Text {
+        text-transform: uppercase;
+    }
+
+    .Status {
+        color: #808080;
+    }
+
+    .Updated {
+        color: #808080;
+    }
+
+    .Actions {
+        color: #eee;
+
+        .Read, .Refresh, .Remove {
+            display: inline-block;
+            cursor: pointer;
+            padding: 0 10px;
+            font-size: 20px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+
+            &:disabled {
+                color: #eee;
+            }
+        }
+    }
+}

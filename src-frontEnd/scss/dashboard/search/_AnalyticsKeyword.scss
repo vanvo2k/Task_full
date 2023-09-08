@@ -1,0 +1,44 @@
+.AnalyticsKeyword {
+  .Title {
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      margin: 4px;
+    }
+  }
+  .Details {
+    .Analytic {
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      transition: box-shadow .3s;
+      margin-bottom: 30px;
+
+      &:hover {
+        box-shadow: 8.5px 8.5px 24px 0 rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+      }
+
+      .Value {
+        font-weight: 800;
+        color: #03A9F4;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .ChartKeywordAnalytics {
+    .Chart {
+      margin: auto;
+    }
+  }
+}

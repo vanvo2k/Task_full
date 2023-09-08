@@ -1,0 +1,35 @@
+.TMResultsPreview {
+    .TMResultsHeader {
+        tr {
+            th {
+                border: none;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .TMResultsPreview {
+        table {
+            thead {
+                tr {
+                    th {
+                        &:last-child, &:nth-child(4) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        &:last-child, &:nth-child(4) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

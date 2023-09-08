@@ -1,0 +1,76 @@
+.SortControl {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    label {
+        margin-bottom: 0;
+        color: #808080;
+    }
+
+    .Selects {
+        margin-left: 5px;
+    }
+
+    .ButtonOptions {
+        .Option {
+            &:before {
+                margin-right: 4px;
+            }
+
+            &.trends {
+                &:before {
+                    content: "\e7b9";
+                    font-family: 'Linearicons', serif;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    body .SortControl {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body .SortControl {
+        display: flex;
+        align-items: baseline;
+
+        label {
+            width: 64px;
+        }
+
+        .ButtonOptions {
+            padding-left: 10px;
+        }
+    }
+}
+
+@media all and (min-width: 480px) {
+    .SortControl {
+        .Selects {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    body .SortControl {
+        margin-bottom: 0;
+
+        .Selects {
+            margin-left: 0;
+        }
+
+        label {
+            display: none;
+        }
+
+        .Options {
+            display: none;
+        }
+    }
+}

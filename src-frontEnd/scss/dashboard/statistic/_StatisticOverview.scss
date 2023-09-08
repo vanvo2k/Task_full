@@ -1,0 +1,100 @@
+.StatisticOverview {
+  position: relative;
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #f4f4f4;
+    overflow: hidden;
+  }
+
+  .card-body {
+    padding: 0;
+    .nav {
+      &.nav-tabs {
+        position: relative;
+        .AfterTabs {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          height: 4px;
+          width: 50%;
+          background-color: #e7e9eb;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .ShowDays {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-tabs {
+    // background-color: #f2fbff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 0;
+    margin-bottom: 30px;
+
+    .nav-item {
+      .nav-link {
+        padding: 0 20px;
+        color: #999;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        &.active {
+          color: #333;
+          border-width: 0 1px;
+          border-color: #f4f4f4;
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #089ff2;
+            border-radius: 5px;
+            height: 4px;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    background-color: transparent;
+    border-top: none;
+    padding: 24px 0 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .ShowDays {
+      &.ButtonOptions {
+        border: 1px solid #eee;
+        border-radius: 5px;
+        overflow: hidden;
+        .Option {
+          border: none;
+          border-radius: 0;
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.StatisticProduct {
+  margin-bottom: 40px;
+}
+
+@media all and (max-width: 480px) {
+  .StatisticOverview {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,463 @@
+{
+    "general": {
+        "rank": "Xếp hạng",
+        "ASIN": "ASIN",
+        "price": "Giá",
+        "brand": "Nhãn hiệu",
+        "title": "Tiêu đề",
+        "description": "Mô tả",
+        "all": "Tất cả",
+        "last_week": "Tuần trước",
+        "last_month": "Tháng trước",
+        "last_year": "Năm trước",
+        "two_month_ago": "2 tháng trước",
+        "date": "Ngày",
+        "count": "Số lượng",
+        "upgrade_now": "Nâng cấp",
+        "contact_now": "Liên hệ ngay",
+        "show": "Hiển thị",
+        "items": "sản phẩm",
+        "products": "sản phẩm",
+        "total": "Tổng số",
+        "close": "Đóng",
+        "thumbnail": "Ảnh",
+        "information": "Thông tin sản phẩm",
+        "rank_history": "Lịch sử xếp hạng",
+        "save": "Lưu",
+        "saved": "Đã lưu",
+        "update": "Cập nhật",
+        "cancel": "Hủy bỏ",
+        "delete": "Xóa",
+        "trending_products_title": "Áo đang bán chạy",
+        "favorite_products_title": "Áo đang theo dõi",
+        "excluded_keywords": "Từ khóa loại trừ",
+        "searching": "Đang tìm kiếm...",
+        "no_product": "Không có sản phẩm nào.",
+        "refresh": "Làm mới",
+        "wrong": "Đã có vấn đề gì đó xảy ra không đúng. Vui lòng thử lại!",
+        "announcement": "Để hiển thị cho bạn những kết quả có liên quan nhất, chúng tôi chỉ đưa ra 36 trang kết quả liên quan nhất đến truy vấn của bạn. Nếu bạn muốn xem nốt phần còn lại của kết quả, xin hãy chia nhỏ truy vấn tìm kiếm của bạn bằng cách thêm khoảng Rank, khoảng Giá, hoặc khoảng thời gian cho truy vấn.",
+        "read_more": "Đọc thêm.",
+        "one_year_ago_today": "Ngày này năm trước"
+    },
+    "homePage": {
+        "welcome": "Chào mừng bạn truy cập kho dữ liệu áo thun khổng lồ SpyAMZ!",
+        "more": "Có hơn",
+        "more_end": "sản phẩm trên Merch By Amazon và tăng liên tục hàng giờ.",
+        "explore": "Truy cập kho dữ liệu áo thun!"
+    },
+    "header": {
+        "pricing": "Bảng giá",
+        "affiliate": "Affiliate",
+        "sign_in": "Đăng nhập",
+        "demo": "Demo",
+        "admin": "Admin",
+        "set_membership": "Set membership",
+        "billing": "Thanh toán",
+        "settings": "Cấu hình",
+        "sign_out": "Đăng xuất"
+    },
+    "item": {
+        "last_week": "Tuần trước",
+        "last_month": "Tháng trước",
+        "all": "Tất cả",
+        "link_amazon": "Xem áo trên web Amazon",
+        "rank": "Rank",
+        "ASIN": "ASIN",
+        "price": "Giá",
+        "brand": "Brand",
+        "first_available": "Ngày đăng",
+        "type": "Kiểu",
+        "updated_at": "Cập nhật lúc",
+        "description": "Mô tả",
+        "features": "Features",
+        "created": "Ngày tạo"
+    },
+    "tooltip": {
+        "current_rank": "Thứ hạng Listing ở thời điểm update gần nhất.",
+        "rank_difference": "Phần trăm thay đổi thứ hạng"
+    },
+    "keyword": {
+        "keywords_analytics": "Phân tích từ khoá",
+        "keywords_no_result": "Không có kết quả nào.",
+        "keywords_show": "Hiển thị",
+        "keywords": "từ khóa",
+        "placeholder": "Tìm kiếm từ khóa",
+        "count": {
+            "1": "Một từ",
+            "2": "Hai từ",
+            "3": "Ba từ",
+            "4": "Bốn từ"
+        },
+        "tooltip": {
+            "keywords_analytics": "Danh sách từ khóa và tần suất xuất hiện ở Listing"
+        }
+    },
+    "trademark": {
+        "tooltip": {
+            "trademark_title": "Kiểm tra Trademark theo từ khóa"
+        },
+        "title": "Phát hiện Trademark"
+    },
+    "signIn": {
+        "title": "Đăng nhập",
+        "description": "Đăng nhập với tài khoản:"
+    },
+    "serverError": {
+        "help": "Vui lòng làm mới lại trang hoặc thông báo cho chúng tôi biết nếu vấn đề vẫn tiếp tục xảy ra.",
+        "ignore": "Bỏ qua",
+        "refresh": "Làm mới"
+    },
+    "searchItem": {
+        "header": {
+            "price_is_between": "Giá trong khoảng",
+            "from": "Từ",
+            "to": "Đến",
+            "save": "Lưu lại",
+            "rank_is_between": "Rank trong khoảng",
+            "view_all": "Xem tất cả",
+            "alive": "Tồn tại",
+            "dead": "Không tồn tại",
+            "all": "Tất cả",
+            "time_available_is_between": "Time available is between",
+            "update_query": "Update query",
+            "save_new_query": "Save new query",
+            "remove": "Remove",
+            "save_query": "Save query",
+            "analytic_preview": "Analytic preview",
+            "price": "Giá",
+            "days_ago": "ngày trước",
+            "historical_day": "Historical day",
+            "export": "Export"
+        },
+        "search": {
+            "type": {
+                "all_words": "Chứa tất cả các từ",
+                "at_least_one": "Có ít nhất 1 từ",
+                "same_order": "Các từ đúng thứ tự",
+                "match_phrase": "Đúng chính xác"
+            },
+            "search_placeholder": "ASIN hoặc từ khóa..."
+        },
+        "filter": {
+            "status": {
+                "alive": "Tồn tại",
+                "dead": "Không tồn tại",
+                "all": "Tất cả"
+            },
+            "type": {
+                "all": "Tất cả kiểu áo",
+                "standard": "Standard T-Shirt",
+                "premium": "Premium T-Shirt",
+                "longsleeve": "Long Sleeve T-Shirt",
+                "hoodie": "Pullover Hoodie",
+                "sweatshirt": "Sweatshirt",
+                "tanktop":  "Tank Top",
+                "vneck": "Women's V-neck T-shirt",
+                "raglan": "Raglan Baseball Tee"
+            },
+            "market": {
+                "us": "US",
+                "uk": "UK",
+                "de": "DE"
+            }
+        },
+        "sort": {
+            "field": {
+                "trends": "Xu thế",
+                "rank": "Bán tốt nhất",
+                "trending": "Tăng đột biến",
+                "available": "Ngày đăng",
+                "crawled": "Ngày tìm thấy",
+                "relevance": "Liên quan"
+            },
+            "title": "Sắp xếp theo"
+        },
+        "query": {
+            "save": "Lưu truy vấn",
+            "create_placeholder": "Tên truy vấn",
+            "search_placeholder": "Tìm kiếm theo tên",
+            "invalid_query_name":"Tên không hợp lệ",
+            "query_name_exists":"Tên này đã tồn tại",
+            "no_error":""
+        },
+        "tooltip": {
+            "rank": "Sản phẩm của các store xếp hạng cao nhất",
+            "trending": "Sản phẩm có chỉ số tăng hạng mới trong 7 ngày"
+        }
+    },
+    "pricing": {
+        "your_plan": "Gói dịch vụ của bạn",
+        "free": "Miễn phí",
+        "month": "tháng",
+        "pricing": "Bảng giá",
+        "subscribe": "Đăng ký",
+        "go_home": "Trở về trang chủ"
+    },
+    "mainMenu": {
+        "dashboard": "Thống kê",
+        "product": "Tất cả Áo",
+        "ggs-product": "Sản phẩm GGS",
+        "events": "Sự kiện",
+        "keyword": "Từ khóa",
+        "trademark": "Trademark",
+        "trends": "Xu thế",
+        "favorites": "Yêu thích",
+        "resizer": "Sửa size áo",
+        "analytics": "Analytics",
+        "collapse_menu": "Thu gọn menu",
+        "history": "History",
+        "search": "Search history"
+    },
+    "otherTools": {
+        "spybadass": {
+            "title": "SpyBadass",
+            "subtitle": "Tool Spy Facebook Ads khổng lồ nhất hiện nay",
+            "description": "5k-7k ideas áo mới cập nhật liên tục mỗi ngày sẽ là công cụ hỗ trợ không thể thiếu cho công việc kinh doanh áo thun của bạn."
+        },
+        "spyetsy": {
+            "title": "SpyEtsy",
+            "subtitle": "Tool Spy Etsy đầu tiên trên thị trường",
+            "description": "Etsy từ lâu đã được cộng đồng T-Shirt Sellers coi là mỏ vàng với nguồn ideas chất lừ. Rất nhiều ideas áo thun khủng trên Facebook được tham khảo ideas từ đây."
+        },
+        "ToolLabel": {
+            "link_tool": "Link Tool: ",
+            "fb_group": "Join FB Group: ",
+            "fb_page": "Join FB Page: "
+        }
+    },
+    "tm": {
+        "keywords": "Từ khóa",
+        "warnings": "Cảnh báo",
+        "status": "Trạng thái",
+        "updated": "Cập nhật",
+        "actions": "Chức năng",
+        "placeholder_beAdded": "Nhập từ khóa kiểm tra trademark",
+        "placeholder": "Bạn không thể thêm từ khóa",
+        "sort_by": "Sắp xếp theo",
+        "sort_by_date": "Thời gian",
+        "sort_by_warnings": "Cảnh báo",
+        "count_keywords": "từ khóa",
+        "count_left": "còn lại",
+        "listStatus": {
+            "pending": "Đang chờ",
+            "completed": "Đã xong",
+            "processing": "Đang xử lý"
+        }
+    },
+    "settings": {
+        "billing": {
+            "title": "Thanh toán",
+            "your_plan": "Gói của bạn",
+            "not_subscribe": "Bạn chưa đăng ký gói dịch vụ nào.",
+            "payoneer": "Bạn có muốn thanh toán qua Payoneer?",
+            "click_here": "Click ngay",
+            "change_plan": "Đổi gói",
+            "cancel": "Hủy",
+            "confirm_cancel": "Bạn có chắc chắn muốn hủy gói dịch vụ hiện tại của bạn?",
+            "subscribing": "Bạn đang sử dụng gói",
+            "registration": "Ngày bắt đầu",
+            "expiration": "Ngày hết hạn",
+            "history": {
+                "title": "Lịch sử thanh toán",
+                "date": "Thời gian",
+                "description": "Mô tả",
+                "status": "Trạng thái",
+                "amount": "Tổng",
+                "free": "Miễn phí",
+                "no_transaction": "Bạn chưa thực hiện bất kỳ thanh toán nào."
+            }
+        },
+        "profile": {
+            "title": "Tài khoản",
+            "name": "Tên",
+            "email": "E-mail",
+            "settings": {
+                "title": "Cài đặt",
+                "label_language": "Ngôn ngữ",
+                "language_vi": "Tiếng Việt",
+                "language_en": "Tiếng Anh",
+                "label_phone": "Số điện thoại"
+            }
+        },
+        "referral": {
+            "title": "Giới thiệu",
+            "share": "Chia sẻ link của bạn",
+            "accepted": {
+                "paypal_email": {
+                    "title": "Phương thức thanh toán",
+                    "PAYPAL": "PAYPAL",
+                    "save": "Lưu"
+                },
+                "referral_link": {
+                    "title": "Chia sẻ link của bạn",
+                    "description": "Copy và chia sẻ link đến bạn bè và người quen của bạn ",
+                    "referral_link": "LINK GIỚI THIỆU",
+                    "copy": "Copy",
+                    "edit": "Sửa",
+                    "assets": {
+                        "you_can": "Bạn có thể sử dụng",
+                        "banner_within_assets": "banner chính thức của chúng tôi trong Assets",
+                        "without_any_editing": "để chèn vào website của bạn mà không cần chỉnh sửa đoạn code nào."
+                    }
+                },
+                "referral_statistic": {
+                    "title": "Thống kê",
+                    "click": {
+                        "title": "Lượt click",
+                        "description": "Số lần link của bạn đã được click"
+                    },
+                    "referral": {
+                        "title": "Lượt chuyển đổi",
+                        "description": "Số người đã đăng kí và chuyển đổi gói thành công qua link của bạn."
+                    },
+                    "pending": {
+                        "title": "Đang chờ",
+                        "description": "Số tiền đang chờ xét duyệt."
+                    },
+                    "earned": {
+                        "title": "Đã nhận",
+                        "description": "Số tiền đã được xét duyệt."
+                    },
+                    "paid": {
+                        "title": "Đã thanh toán",
+                        "description": "Số tiền đã được chuyển vào tài khoản của bạn."
+                    }
+                },
+                "policy": {
+                    "how_it_work": "Muốn tìm hiểu thêm thông tin và cách hoạt động của chương trình? Hãy xem ",
+                    "term_and_policy": "điều khoản và chính sách."
+                }
+            },
+            "not_register": {
+                "description": "Tham gia chương trình giới thiệu và nhận tiền thưởng ngay hôm nay",
+                "join_now": "Đăng kí ngay!",
+                "term_and_policy_title": "Điều khoản và chính sách của chương trình",
+                "see_more": "Xem thêm ..."
+            },
+            "pending": {
+                "status": "Trạng thái: ",
+                "pending": "Đang chờ",
+                "description": "Yêu cầu tham gia chương trình của bạn đã được gửi lên. Sẽ mất một chút thời gian để phê duyệt.",
+                "waiting_for_result": "Trong khi chờ đợi kết quả, bạn có thể đọc ",
+                "term_and_policy": "điều khoản và chính sách",
+                "of_the_program": " của chương trình."
+            },
+            "rejected": {
+                "status": "Trạng thái: ",
+                "rejected": "Từ chối",
+                "description": "Rất tiếc, yêu cầu của bạn đã bị từ chối.",
+                "you_can_read": "Bạn có thể xem ",
+                "term_and_policy": "điều khoản và chính sách",
+                "to_find_out": " của chương trình để tìm hiểu tại sao yêu cầu của bạn bị từ chối."
+            },
+            "blocked": {
+                "status": "Trạng thái: ",
+                "blocked": "Bị chặn",
+                "description": "Rất tiếc, nhưng chương trình giới thiệu của bạn đã bị dừng",
+                "you_can_read": "Bạn có thể xem ",
+                "term_and_policy": "điều khoản và chính sách",
+                "or_contact": " của chương trình để tìm hiểu tại sao chương trình của bạn bị dừng."
+            },
+            "error": {
+                "message": "Có lỗi xảy ra. Hãy thử lại."
+            }
+        }
+    },
+    "resizer": {
+        "title": "PNG Resizer cho Merch by Amazon",
+        "guide": "Thay đổi kích thước thiết kế áo thun của bạn theo chuẩn kích thước PNG 4500x5400 cho T-Shirt và 4500x4050 cho Hoodie của Merch by Amazon.\nBạn chỉ việc kéo thả đống Artwork của bạn vào khu vực kẻ ô phía dưới.\nKhông phải đợi quá trình upload mất thời gian, tớ sẽ hoàn thành cho bạn nhanh như điện trong không quá 60 giây.",
+        "ps": "PS: tính năng này dùng server của tụi https://bulkresizephotos.com/ để xử lí, tụi e hoàn toàn ko upload, store hay can thiệp đc bất cứ cái gì bà con upload lên nha.\nAi biết về check choác như mấy cụ bóc phốt Cốc Cốc cứ test thử đi ạ, an toàn tuyệt đối lun ^^."
+    },
+    "user_menu": {
+        "support": "Hỗ trợ",
+        "billing": "Thanh toán",
+        "settings": "Cài đặt",
+        "affiliates": "Giới thiệu",
+        "new": "mới",
+        "sign_out": "Thoát"
+    },
+    "statistic": {
+        "random_products": "Sản phẩm ngẫu nhiên",
+        "top_10_rising": "10 sản phẩn bán đột biến nhất",
+        "top_10_bsr": "10 sản phẩm bán chạy nhất",
+        "alive": "Sống",
+        "has_rank": "Áo bán được",
+        "total": "Tổng",
+        "updated": "Đã cập nhật",
+        "new": "Mới lên chợ",
+        "added": "Mới thêm",
+        "deleted": "Đã xóa",
+        "see_more": "Xem thêm"
+    },
+    "upgrade": {
+        "trial": {
+            "title": "Đăng ký ngay để sử dụng công cụ spy Merch MIỄN PHÍ",
+            "description": "Toàn quyền sử dụng tất cả các chức năng, dữ liệu sale và rank cùng các công cụ cao cấp khác miễn phí.",
+            "upgrade": "Dùng thử ngay"
+        },
+        "pro": {
+            "title": "Nâng cấp lên bản PRO chỉ với 99$",
+            "description": "Truy cập TOÀN BỘ kho dữ liệu khổng lồ cùng các chức năng cao cấp khác chỉ dành riêng cho PRO.",
+            "upgrade": "Nâng cấp lên gói PRO"
+        },
+        "trial_trademark":{
+            "title": "Gói nâng cấp để truy cập không giới hạn",
+            "description": "Nhận quyền truy cập không giới hạn vào tất cả tính năng Nâng cao dành riêng cho gói PRO.",
+            "upgrade": "Xem kế hoạch"
+        }
+    },
+    "event": {
+        "title": "Sự kiện",
+        "details": "Chi tiết",
+        "more_products": "Xem thêm sản phẩm"
+    },
+    "favorite": {
+        "title_category": "Danh mục yêu thích",
+        "no_category": "Bạn chưa có danh mục yêu thích nào",
+        "confirm_delete": "Bạn có chắc chắn muốn xóa bảng này?",
+        "modal": {
+            "title": "Thêm vào mục yêu thích",
+            "placeholder_input": "Tìm kiếm hoặc tạo một chuyên mục mới",
+            "create": "Tạo"
+        }
+    },
+    "limit_offer": {
+        "header": {
+            "title": "ƯU ĐÃI QUÀ TẶNG LÊN TỚI $1000",
+            "description": "Hãy để lại contact và nhận lại kho Design, Mockup, Tool Tips cực khủng nhé"
+        },
+        "list_gift": {
+            "gift_1": "Mẫu Design & Mockup trending",
+            "gift_2": "Hướng dẫn bán hàng POD/Dropship",
+            "gift_3": "Voucher giảm giá lên đến 60%"
+        },
+        "form": {
+            "email": "Email",
+            "phone": "SĐT/Facebook",
+            "button": "Đăng ký ngay"
+        },
+        "countdown": {
+            "title": "Ưu đãi sẽ kết thúc trong...",
+            "day": "ngày",
+            "hour": "giờ",
+            "minute": "phút",
+            "second": "giây"
+        }
+    },
+    "optin": {
+        "title": "Tham gia",
+        "subtitle": "thư báo đỉnh cao nhất \nvề merch by amazon",
+        "description": " trở thành thành viên VIP nhận thư báo",
+        "description_strong": "mẫu áo hót và tin nóng",
+        "description_end": "nhất từ SpyAMZ",
+        "subscribe": "Tham gia ngay",
+        "thanks": "Cảm ơn bạn"
+    },
+    "similarProducts": {
+        "title": "Sản phẩm tương tự",
+        "no_product": "Xin lỗi! Hệ thống không tìm thấy sản phẩm tương tự nào."
+    }
+}
+
+
+

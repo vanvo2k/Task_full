@@ -1,0 +1,240 @@
+.SidebarDashboard {
+    width: 280px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    height: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 11;
+    @include transition(all .3s);
+
+    .NavTrademark {
+        position: relative;
+
+        .TMTotalWarnings {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff443e;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+    }
+
+    .OtherApps {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 70px;
+        .nav{
+            padding: 0;
+            .nav-item.Logo{
+                margin-bottom: 0 !important;
+                &.spybadass{
+                    background: url('/assets/images/spyads.png') no-repeat center center;
+                    background-size: 30%;
+                }
+                &.spyetsy{
+                    background: url('/assets/images/spyetsy.png') no-repeat center center;
+                    background-size: 30%;
+                }
+            }
+        }
+    }
+
+    .nav {
+        font-size: 1.125rem;
+        width: 100%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        .Copyright {
+            font-size: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .Logo {
+            background: url('/assets/images/logo-v1.png') no-repeat center center;
+            background-size: 101px 66px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+
+            .nav-link {
+                display: inline-block;
+                height: 70px;
+                width: 100%;
+
+                &:not(:first-child):hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .nav-item {
+            width: 100%;
+
+            &:not(.Logo) {
+                height: 50px;
+                line-height: 55px;
+            }
+
+            &:not(.Logo) {
+                margin-bottom: 5px;
+            }
+
+            &:not(:first-child) {
+                .nav-link {
+                    &:hover {
+                        background-color: $tamz_primary_color;
+                        color: #fff;
+                        box-shadow: 4.2px 4.2px 16px 0 rgba(0, 0, 0, 0.08);
+                    }
+                }
+            }
+
+            &.spybadass.Logo, &.spyetsy.Logo {
+                background-size: 73px 40px;
+                margin-top: 0;
+                margin-bottom: 10px;
+                position: relative;
+                a {
+                    &:hover {
+                        background: transparent;
+                        box-shadow: none;
+                    }
+                }
+                &:hover{
+                    .spybadass, .spyetsy {
+                        display: block;
+                    }
+                }
+                .ToolInfo {
+                    display: none;
+                    font-size: 14px;
+                    padding: 20px;
+                    position: absolute;
+                    width: 500px;
+                    left: 279px;
+                    bottom: -15px;
+                    height: auto;
+                    z-index: 9999;
+                    background: #fff;
+                    .Title{
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #eee;
+                        .Name {
+                            &.spyetsy{
+                                color: #f56400;
+                            }
+                            &.spybadass{
+                                color: #4267b2;
+                            }
+                        }
+                        .SubTitle {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .Info {
+                        margin-top: 10px;
+                        .Description {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-link {
+            position: relative;
+            padding: 0 10px 0 44px;
+            transition: background-color .3s;
+
+            & > i {
+                position: absolute;
+                top: 12px;
+                font-size: 1.6rem;
+            }
+
+            &.active {
+                box-shadow: 4.2px 4.2px 16px 0 rgba(0, 0, 0, 0.08);
+
+                .Text {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .Text {
+            margin-left: 44px;
+            transition: all .3s;
+        }
+
+        .CollapseMenu {
+            cursor: pointer;
+
+            .Open {
+                display: none;
+            }
+        }
+    }
+
+    &.collapsed {
+        .nav {
+            padding: 0;
+        }
+
+        .OtherApps{
+            width: 100px;
+            .nav {
+                .nav-item.Logo {
+                    &.spyetsy, &.spybadass {
+                        background-size: 70%;
+                        .ToolInfo {
+                            left: 99px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .UserMenu {
+            padding: 0 0 30px 0;
+        }
+    }
+}
+
+@media all and (max-width: 1440px) {
+    .SidebarDashboard {
+        .nav {
+            .Logo {
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .Copyright {
+                display: none;
+            }
+
+            .nav-item {
+                &:not(.Logo) {
+                    line-height: 45px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .Dashboard {
+        .SidebarDashboard {
+            display: none!important;
+        }
+    }
+}

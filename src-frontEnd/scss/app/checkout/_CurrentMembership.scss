@@ -1,0 +1,27 @@
+.CurrentMembership {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    color: #808080;
+    font-size: 1rem;
+    text-align: center;
+
+    .Title {
+        color: #333;
+        font-size: 1.4rem;
+    }
+
+    .Icon {
+        color: #37af56;
+        font-size: 5rem;
+    }
+
+    strong {
+        color: #333;
+    }
+
+    .Membership {
+        margin-bottom: 20px;
+    }
+}
